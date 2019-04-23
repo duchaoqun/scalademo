@@ -47,4 +47,8 @@ object Main extends App {
   BigInt(1234) * BigInt(3456)
   BigInt.apply(1234) * BigInt.apply(3456)
 
+
+  def test(): Unit ={
+    println("测试合并代码")
+  }
 }
