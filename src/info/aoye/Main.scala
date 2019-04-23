@@ -26,6 +26,7 @@ object Main extends App {
   x += 1
   println(x)
 
+  // 测试合并
 
   // 调用方法的时候可以省略的小括号，如果一个无参数的方法并不修改对象，调用的时候就不用写括号。
   println("Hello".sorted)
