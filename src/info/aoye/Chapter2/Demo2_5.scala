@@ -31,6 +31,9 @@ object Demo2_5 extends App {
 
   import scala.util.control.Breaks._
   breakable {
-    for (x <- 1 to 10)
+    for (x <- 1 to 10){
+      if (x > 5) break()  // 退出块，这里是通过抛出异常和捕获异常实现的，高校的Scala程序，应该尽量避免使用这种方式。
+      println(x)
+    }
   }
 }
