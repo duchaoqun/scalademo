@@ -32,3 +32,36 @@
 - 3.3 遍历数组Array和缓冲数组ArrayBuffer
 - 3.4 数组转换
 - 3.5 常用算法
+- 3.6 解读ScalaDoc ? TraversableOnce特质
+- 3.7 多维数组
+- 3.8 Scala与Java的互操作
+
+## Chapter 4 Map 和 Tuple
+
+重点：
+1. Map分为可变和不可变
+2. Tuple可以用来收集数据
+
+- 4.1 定义Map
+- 4.2 获取Map中的值
+- 4.3 更新Map中的值
+- 4.4 迭代Map
+- 4.5 SortedMap(树形映射)
+- 4.6 Scala与Java的互操作
+- 4.7 Tuple
+- 4.8 拉链操作
+
+## Chapter 5 Class
+
+重点：
+1. Class中的字段自动带有getter和setter方法
+2. 你可以用定制的getter/setter方法替换掉字段的定义，而不必修改使用类的客户端（所谓的同意访问原则）
+3. 用@beanProperty注解来生成JavaBeans的getXxx/setXxx方法。
+4. 每个类都有一个主要的构造器，这个构造器和类定义“交织”在一起，它的参数直接成为类的字段。主构造器执行类体中的所有语句。
+5. 辅助构造器是可选的，它们叫做this
+
+- 5.1 简单类和无参方法
+- 5.2 带getter和setter的属性
+- 5.3 只有getter的属性
+- 5.4 对象私有字段
+- 5.5 Bean属性【L1】
