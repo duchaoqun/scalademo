@@ -5,7 +5,7 @@ package info.aoye.Chapter6
   * 一个Object可以扩展类以及一个或者多个特质，其结果是扩展了指定类以及特质的类的对象，同时拥有在对象定义中给出的所有特性。
   * 场景：给出可以被共享的默认对象。
   */
-object Demo6_2 extends App {
+object Demo6_3 extends App {
   val actions = Map("open" -> DoNothingAction,"save" -> DoNothingAction)
 }
 
