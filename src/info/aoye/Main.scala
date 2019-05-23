@@ -53,4 +53,7 @@ object Main extends App {
     println("测试合并代码")
     println("Test merge")
   }
+
+  // 包对象：在其他的地方使用包对象中的内容。
+  val name = info.aoye.Chapter7.defaultName
 }
