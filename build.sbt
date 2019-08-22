@@ -9,6 +9,11 @@ libraryDependencies += "com.lowagie" % "itext" % "2.1.7"
 // https://mvnrepository.com/artifact/net.sf.jasperreports/jasperreports
 libraryDependencies += "net.sf.jasperreports" % "jasperreports" % "6.8.0"
 
+
+// 加密
+// https://mvnrepository.com/artifact/org.mindrot/jbcrypt
+libraryDependencies += "org.mindrot" % "jbcrypt" % "0.4"
+
 // 网站爬虫相关的包
 // https://mvnrepository.com/artifact/org.jsoup/jsoup
 libraryDependencies += "org.jsoup" % "jsoup" % "1.12.1"

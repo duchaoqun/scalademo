@@ -19,5 +19,14 @@ object DemoPostgres extends App {
   while (result1.next()) {
     println(result1.getString("aaa"))
   }
-  conn.close()
+
+  val result2 = selectObj("select count(*) as bbb from account", conn)
+  while (result1.next()) {
+    println(result1.getString("bbb"))
+  }
+
+  Thread.sleep(100000)
+  //conn.close()
+  // 1. Thread 存在的时候，连接就会存在
+
 }
