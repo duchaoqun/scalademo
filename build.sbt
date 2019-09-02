@@ -14,9 +14,15 @@ libraryDependencies += "net.sf.jasperreports" % "jasperreports" % "6.8.0"
 // https://mvnrepository.com/artifact/org.mindrot/jbcrypt
 libraryDependencies += "org.mindrot" % "jbcrypt" % "0.4"
 
+
 // 网站爬虫相关的包
 // https://mvnrepository.com/artifact/org.jsoup/jsoup
 libraryDependencies += "org.jsoup" % "jsoup" % "1.12.1"
+
+
+// SQLite Database
+// https://mvnrepository.com/artifact/org.xerial/sqlite-jdbc
+libraryDependencies += "org.xerial" % "sqlite-jdbc" % "3.28.0"
 
 // 引入一些外部包，在项目中创建一个lib目录，然后将这些包放到这里。
 unmanagedJars in Compile ++= Seq(

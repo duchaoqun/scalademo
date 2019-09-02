@@ -6,7 +6,7 @@ import java.sql.{Connection, DriverManager, ResultSet}
   * 链接Postgres数据库获取数据。
   */
 object DemoPostgres extends App {
-  val strConn: String = "jdbc:postgresql://172.16.1.83:5432/lms_20190522?user=postgres&password=111111"
+  val strConn: String = "jdbc:postgresql://172.16.1.83:5432,172.16.1.228:5432/duchaoqun?user=postgres&password=111111"
   val conn = DriverManager.getConnection(strConn)
 
   def selectObj(sql: String, conn: Connection): ResultSet = {
@@ -15,12 +15,12 @@ object DemoPostgres extends App {
     rs
   }
 
-  val result1 = selectObj("select count(*) as aaa from account",conn)
+  val result1 = selectObj("select count(*) as aaa from tt_1",conn)
   while (result1.next()) {
     println(result1.getString("aaa"))
   }
 
-  val result2 = selectObj("select count(*) as bbb from account", conn)
+  val result2 = selectObj("select count(*) as bbb from tt_1", conn)
   while (result1.next()) {
     println(result1.getString("bbb"))
   }
