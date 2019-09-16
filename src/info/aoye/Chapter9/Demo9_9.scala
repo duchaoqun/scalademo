@@ -1,5 +1,7 @@
 package info.aoye.Chapter9
 
+import scala.language.postfixOps
+
 import java.io.File
 
 /**

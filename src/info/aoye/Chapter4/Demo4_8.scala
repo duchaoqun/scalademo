@@ -1,5 +1,6 @@
 package info.aoye.Chapter4
 
+import scala.language.postfixOps
 /**
   * 4.8 拉链操作
   */

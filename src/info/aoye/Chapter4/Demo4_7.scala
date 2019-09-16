@@ -1,5 +1,7 @@
 package info.aoye.Chapter4
 
+import scala.language.postfixOps
+
 /**
   * 4.7 Tuple
   * Map是键值对的集合

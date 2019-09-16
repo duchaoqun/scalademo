@@ -1,5 +1,7 @@
 package info.aoye.Chapter11
 
+import scala.language.postfixOps
+
 /**
   * 11.3 一元操作符
   *
@@ -16,8 +18,8 @@ object Demo11_3 extends App {
   println(a.unary_-)
 
   // e.g. 如果某一个一元操作符跟在参数后面，它就是后置(postfix)操作符号。
+  println(a.toString)
   println(a toString)
-  println(a.toString())
 
   // 后置操作符可能会引发解析错误。
   val result = 100 toString
