@@ -1,6 +1,6 @@
 package cn.duchaoqun.DemoSecurity
 
-import info.aoye.util.Security
+import cn.duchaoqun.util.Security
 
 /**
   * 计算一个文件的 MD5 值

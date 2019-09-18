@@ -1,5 +1,3 @@
-package info.aoye.Chapter7
-
 /**
   * 7.1 包
   */
@@ -12,8 +10,8 @@ object Demo7_1 {
 // 在调用的时候可以使用全路径来引用，可不可以使用相对路径来引用呢？
 // 也可以在一个文件中对多个包进行扩展，类似如下的书写方式。
 
-package info{
-  package aoye{
+package cn{
+  package duchaoqun{
     package pkg1{
       class Test1{
 
@@ -22,8 +20,8 @@ package info{
   }
 }
 
-package info{
-  package aoye{
+package cn{
+  package duchaoqun{
     package pkg2{
       class Test1{
 

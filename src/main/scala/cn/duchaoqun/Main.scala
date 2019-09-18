@@ -55,5 +55,5 @@ object Main extends App {
   }
 
   // 包对象：在其他的地方使用包对象中的内容。
-  val name = info.aoye.Chapter7.defaultName
+  val name = cn.duchaoqun.Chapter7.defaultName
 }
