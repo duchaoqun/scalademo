@@ -1,6 +1,12 @@
 # Scala
 
-《快学Scala》一书中的内容，第一张忽略，从第二章开始记录笔记。
+Scala 学习笔记
+
+## Chapter 1 基础知识
+
+- 1.1 Scala 历史
+- 1.2 Scala 应用案例
+- 1.3 Scala 环境准备
 
 ## Chapter 2 控制结构和函数
 
@@ -170,6 +176,47 @@
 - 11.6 操作符结合性
 - 11.7 apply 和 update 方法
 - 11.8 提取器
+- 11.9 带单个参数或无参数的提取器
+- 11.10 unapplySeq 方法
+
+## Chapter 12 Function（函数）
+
+- 12.1 将函数赋值给变量
+- 12.2 匿名函数
+- 12.3 带"函数参数"的函数
+- 12.4 参数“类型”推断
+- 12.5 常用的高阶函数
+- 12.6 闭包
+- 12.7 SAM转换
+- 12.8 柯里化【TODO】
+- 12.9 控制抽象【TODO】
+- 12.10 return 表达式【TODO】
+
+## Chapter 13 Collection（集合）
+
+## Chapter 14 模式匹配和样例类
+
+## Chapter 15 注解
+
+## Chapter 16 XML 处理
+
+## Chapter 17 类型参数
+
+## Chapter 18 高级类型
+
+## Chapter 19 解析
+
+## Chapter 20 Actor
+
+- 20.1 创建和启动 Actor
+- 20.2 发送消息到 Actor
+- 20.3 取出 Actor 收到的消息
+- 20.4 向其他 Actor 发送消息
+
+## Chapter 21 隐式转换和隐式参数
+
+## Chapter 22 定界延续
+
 
 ## Demo Jasper Report
 

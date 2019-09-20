@@ -12,9 +12,6 @@ case class Demo01_Host1(address: String, port: Int) {
   }
 }
 
-// 定义一个 Exception 类型。
-case class DCC03_Exception(msg: String) extends Exception
-
 
 /**
   * 说明: 设计一个类只是用来作为数据载体时，Case Class 是一个很好的选择，实际上，这正是DTO（或者也有叫作VO）做的事情。
