@@ -9,6 +9,7 @@ Scala 学习笔记
 - 1.3 Scala 环境准备
 - 1.4 数据类型 Char
 - 1.5 数据类型 String
+- 1.6 数据类型 Float
 
 ## Chapter 2 控制结构和函数
 
@@ -23,19 +24,11 @@ Scala 学习笔记
 - 2.9 变长参数
 - 2.10 过程（procedure）
 - 2.11 懒值
-- 2.12 异常
+- 2.12 Exception（异常）
 
 ## Chapter 3 Array【数组】
 
-重点：
-1. 若长度固定则使用Array，若长度可能有变化则使用ArrayBuffer.
-2. 提供初始值的时候不要使用new
-3. 使用()来访问元素
-4. 使用for(elem<-arr)来遍历元素
-5. 使用for(elem<-arr if ...) ... yield .. 将原来的数组转型为新数组。
-6. Scala数组和Java数组可以互操作；用ArrayBuffer，使用scala.collection.JavaConversions中的转换函数。
-
-- 3.1 定长数组
+- 3.1 Array(定长数组，不可变)
 - 3.2 变长数组：数组缓冲
 - 3.3 遍历数组Array和缓冲数组ArrayBuffer
 - 3.4 数组转换
@@ -44,7 +37,7 @@ Scala 学习笔记
 - 3.7 多维数组
 - 3.8 Scala与Java的互操作
 
-## Chapter 4 Map 和 Tuple
+## Chapter 4 Map【映射】和Tuple【元组】
 
 重点：
 1. Map分为可变和不可变
@@ -201,6 +194,8 @@ Scala 学习笔记
 - 13.3 Seq(序列)
 - 13.4 List(不可变列表)
 - 13.5 ListBuffer(可变列表)
+- 13.6 Set(集合)
+- 13.7 用于添加或删除元素的操作符【TODO】
 
 ## Chapter 14 模式匹配和样例类
 
@@ -224,6 +219,8 @@ Scala 学习笔记
 - 20.6 同步消息和Future【TODO】311页
 
 ## Chapter 21 隐式转换和隐式参数
+
+- 21.1 隐式转换
 
 ## Chapter 22 定界延续
 

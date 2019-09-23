@@ -18,6 +18,8 @@ object Demo1_1 extends App {
   // 函数是一等公民，就和数字一样。
 
 
+  // 处理异常的时候使用 throw 表达式，该表达式的返回值类型是 Nothing。
+  // 在条件表达式 if 中，如果一个分支的类型是Nothing，那么if/else表达式的类型就是另外一个分支的类型。
 
 
   // 【官方网站】 https://www.scala-lang.org/
