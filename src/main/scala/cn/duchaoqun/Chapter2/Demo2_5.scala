@@ -36,4 +36,32 @@ object Demo2_5 extends App {
       println(x)
     }
   }
+
+  // Demo A: Use flag parameter to break
+  var flag = true
+  while (flag) {
+    for (item <- "Spark") {
+      println(item)
+      if (item == 'r') flag = false  // 这里会完成一次循环才能跳出,逻辑有些问题.
+    }
+  }
+
+  // Demo B: 使用breakable来跳出循环
+  import scala.util.control.Breaks._
+  breakable{
+    while (flag) {
+      for (item <- "Spark") {
+        println(item)
+        if (item == 'r') break
+      }
+    }
+  }
+
+  // Demo C: 感觉这里使用for更合适. Feel for is better.
+  var int1 = 0
+  while (int1 < args.length) {
+    println(args {
+      int1
+    })
+  }
 }
