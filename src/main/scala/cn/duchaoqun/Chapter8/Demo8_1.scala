@@ -1,9 +1,7 @@
 package cn.duchaoqun.Chapter8
 
 /**
-  * 8.1 扩展类
-  *
-  * 使用extends 关键字继承父类。
+  * 8.1 扩展类，使用 extends 关键字继承父类。
   */
 object Demo8_1 extends App {
 
@@ -26,3 +24,4 @@ class Demo8_1_1 extends Person {
   // 可以复写父类的信息
   override val age = 11
 }
+
