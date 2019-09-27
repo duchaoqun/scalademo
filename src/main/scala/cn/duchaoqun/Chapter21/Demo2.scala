@@ -11,7 +11,7 @@ import scala.io.Source
   * 一是你需要联系作者，让作者来添加新的功能。
   * 二是  * 就可以用隐式转换来实现。
   */
-object Demo21_2 extends App {
+object Demo2 extends App {
 
   // 例如：你想将 File 对象添加一个直接转换成 String 类型的功能，原始的类库没有这个功能。
   val file = new File("test.txt")

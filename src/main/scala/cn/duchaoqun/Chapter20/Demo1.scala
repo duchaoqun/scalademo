@@ -1,7 +1,7 @@
 package cn.duchaoqun.Chapter20
 
 import akka.actor.Actor
-import cn.duchaoqun.Chapter20.Demo20_2.Msg
+import cn.duchaoqun.Chapter20.Demo2.Msg
 
 
 /**

@@ -22,6 +22,6 @@ package cn.duchaoqun.Chapter20
   * 注意：当一个Actor持有另外一个Actor的引用时，它应该只用这个引用发送消息，不能用来调用其方法。
   *      如果这样做了，就违背了Actor模型的意义，它同时还可能引发争用问题（Actor 被设计出来要避免的问题）。
   */
-object Demo20_4 extends App {
+object Demo4 extends App {
 
 }

@@ -157,6 +157,24 @@ Scala 学习笔记
 
 ## Chapter 14 模式匹配和样例类
 
+- 1. 更好的 switch 【TODO】
+- 2. 守卫【TODO】
+- 3. 模式中的变量【TODO】
+- 4. 类型模式【TODO】
+- 5. 匹配数组、列表、元组【TODO】
+- 6. 提取器【TODO】
+- 7. 变量声明中的模式【TODO】
+- 8. for 表达式中的模式【TODO】
+- 9. 样例类【TODO】
+- 10. copy方法和带名参数【TODO】
+- 11. case语句中的中置表达法【TODO】
+- 12. 匹配嵌套结构【TODO】
+- 13. 样例类是邪恶的吗？【TODO】
+- 14. 密封类【TODO】
+- 15. 模拟枚举【TODO】
+- 16. Option类型【TODO】
+- 17. 偏函数【TODO】
+
 ## Chapter 15 注解
 
 ## Chapter 16 XML 处理
@@ -174,25 +192,25 @@ Scala 学习笔记
 
 ## Chapter 20 Actor
 
-- 20.1 创建和启动 Actor
-- 20.2 发送消息到 Actor
-- 20.3 取出 Actor 收到的消息
-- 20.4 向其他 Actor 发送消息
-- 20.5 消息通道【TODO】310页
-- 20.6 同步消息和Future【TODO】311页
+- 1 创建和启动 Actor
+- 2 发送消息到 Actor
+- 3 取出 Actor 收到的消息
+- 4 向其他 Actor 发送消息
+- 5 消息通道【TODO】310页
+- 6 同步消息和Future【TODO】311页
 
 ## Chapter 21 隐式转换和隐式参数
 
-- 21.1 隐式转换
-- 21.2 利用隐式转换扩展现有类库的功能
-- 21.3 引入隐式转换
-- 21.4 隐式转换规则
-- 21.5 隐式参数【TODO】
-- 21.6 利用隐式参数进行隐式转换【TODO】
-- 21.7 上下文界定【TODO】
-- 21.8 类型证明【TODO】
-- 21.9 @implicitNotFound注解【TODO】 
-- 21.10 CanBuildFrom解读【TODO】
+- 1 隐式转换
+- 2 利用隐式转换扩展现有类库的功能
+- 3 引入隐式转换
+- 4 隐式转换规则
+- 5 隐式参数
+- 6 利用隐式参数进行隐式转换
+- 7 上下文界定【TODO】
+- 8 类型证明【TODO】
+- 9 @implicitNotFound注解【TODO】 
+- 10 CanBuildFrom解读【TODO】
 
 ## Chapter 22 定界延续
 

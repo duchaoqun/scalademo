@@ -2,7 +2,7 @@ package cn.duchaoqun.Chapter20
 
 import akka.actor.{ActorRef, ActorSystem, Props}
 
-object Demo20_2 extends App {
+object Demo2 extends App {
 
   // Actor 是一个异步处理消息的对象，你向某个 Actor 发送消息，该 Actor 处理消息，可能还会向其他 Actor 发送消息。
   // 消息可以是任何对象，例如一个 String 对象、一个 Int 类型对象、或者其他更复杂的对象。

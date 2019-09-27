@@ -4,8 +4,10 @@ import scala.collection.mutable.ListBuffer
 
 /**
   * 21.1 隐式转换
+  *
+  * 一般在 Object 伴生对象里面创建隐式转换相关内容。
   */
-object Demo21_1 extends App {
+object Demo1 extends App {
 
   // implicit conversion function 是指用 implicit 关键字声明，带有单个参数的函数，这样的函数会被自动应用，将值从一种类型转换成另外一种类型。
 
