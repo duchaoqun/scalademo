@@ -24,11 +24,29 @@ object Demo1_1 extends App {
   // 调用无参方法可以省略小括号，但是对于调用可以改变对象状态的方法一般写上小括号。
   "Scala".toString
 
-  // 【官方网站】 https://www.scala-lang.org/
+  // 【官方网站】
+  // https://www.scala-lang.org/
 
-  // 【API 文档】
-  // https://docs.scala-lang.org/api/all.html
-  // https://www.scala-lang.org/api/current/
+  // 【官方文档】
+  // https://www.scala-lang.org/api/current/    当前最新版本的API文档
+  // https://docs.scala-lang.org/api/all.html   各个版本的API文档
+  // https://docs.scala-lang.org/tutorials/
 
-  // 【Play FrameWork 官方文档】https://www.playframework.com/documentation/2.8.0-M5/Home
+  // 【AKKA】
+  // https://doc.akka.io/api/akka/2.5.11/akka/index.html
+
+  // 【Play FrameWork 官方文档】
+  // https://www.playframework.com/documentation/2.7.x/Home
+  // https://www.playframework.com/documentation/2.8.0-M5/Home
+
+  // 【PlaySlick文档】
+  // http://slick.lightbend.com/doc/3.2.3/
+  // http://slick.lightbend.com/doc/3.2.3/api/index.html#package
+
+  // 【Spark官方文档】
+  // http://spark.apache.org/docs/
+  // http://spark.apache.org/docs/latest/api/scala/index.html
+
+  // 【其他文档】
+  // https://www.scala-js.org/api/scalajs-library/latest/
 }

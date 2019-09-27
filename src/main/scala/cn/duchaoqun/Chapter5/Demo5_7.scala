@@ -5,7 +5,7 @@ package cn.duchaoqun.Chapter5
   * 1. 辅助构造器的名称为this，在修改类名时无需更改构造器名字
   * 2. 每一个辅助构造器必须一个对先前已经定义的其他辅助构造器或者主构造器的调用开始。
   */
-object Demo5_6 extends App {
+object Demo5_7 extends App {
   val p0 = new Person01 // 调用默认的主构造器
   val p1 = new Person01("Scala")  // 第一个辅助构造器
   val p2 = new Person01("Java",2)  // 第二个辅助构造器

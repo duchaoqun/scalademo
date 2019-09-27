@@ -1,5 +1,11 @@
 package cn.duchaoqun.Chapter5
 
+/**
+  * 重点：
+  * 1. Class中的字段自动带有getter和setter方法
+  * 2. 你可以用定制的getter/setter方法替换掉字段的定义，而不必修改使用类的客户端（所谓的同意访问原则）
+  * 3. 用@beanProperty注解来生成JavaBeans的getXxx/setXxx方法。
+  */
 object Demo5 extends App {
   // 1. 使用class关键字定义一个类，然后使用new class的方式创建这个类的对象。
   // 2. 定义一个class，然后再定义一个同名的object，这个 class 就是 object 伴生类，同名的 object 就是 class 的伴生对象(存放静态方法，隐式转换等内容)。
@@ -10,5 +16,8 @@ object Demo5 extends App {
   //    当然Spark图计算的源代码可以看出，GraphImpl的构造也是使用了object GraphImpl的apply方法。
   // 6. 在定义 scala 的 class 的时候，可以直接在类名后面()加入类的构造参数，此时在apply的方法中也必须有这些参数。
   // 7. 辅助构造器是可选的，他们的名字都叫做this
+
+
+
 
 }
