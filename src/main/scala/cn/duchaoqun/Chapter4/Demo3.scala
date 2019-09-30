@@ -3,10 +3,11 @@ package cn.duchaoqun.Chapter4
 import scala.collection.mutable
 
 /**
-  * 4.3 更新Map中的值
+  * 3 更新Map中的值
+  *
   * 在可变映射中，你可以更新某个Map的值，或者添加一个新的Map
   */
-object Demo4_3 extends App {
+object Demo3 extends App {
   val scores = mutable.Map("Scala" -> 10, "Java" -> 8)
   scores("Groovy") = 7 // 新增或者更新已有的键值
   scores += ("JS" -> 10, "SQL" -> 10) // 添加多个键值对

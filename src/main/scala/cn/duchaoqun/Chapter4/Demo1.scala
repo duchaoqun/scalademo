@@ -3,9 +3,9 @@ package cn.duchaoqun.Chapter4
 import scala.collection.mutable
 
 /**
-  * 4.1 定义Map
+  * 1 定义Map
   */
-object Demo4_1 extends App {
+object Demo1 extends App {
 
   // 定义一个不可变(immutable)的Map[String, Int]
   val scores0 = Map("Scala" -> 10, "Java" -> 8)

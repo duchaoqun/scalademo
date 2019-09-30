@@ -1,6 +1,25 @@
 package cn.duchaoqun
 
+import cn.duchaoqun.Demo.{Man, Person}
+
 object Main extends App {
+  // 里氏替换原则：
+  val p1 = new Person
+  val p2 = new Man
+
+
+  // 任何可以出现父类 Person 的地方，同样可以出现其子类。
+  def display1(person: Person): Unit = {
+    person.display()
+  }
+  // 如果使用的是一个子类的话，那么它不能适用于其父类。
+  def display2(man: Man): Unit = {
+    man.display()
+  }
+
+  display1(p2)
+  // display2(p1) 错误的
+
   val xmax, ymax = 100
 
   println(1.toString)
@@ -12,7 +31,7 @@ object Main extends App {
 
   // 在Scala中使用方法来转换类型，而不是使用强制类型转换
   println(99.99.toInt) // 得到 99
-  println(99.toChar)   // 得到 c
+  println(99.toChar) // 得到 c
   println(99.toDouble) // 得到 99.0
 
 
@@ -35,7 +54,7 @@ object Main extends App {
   //todo singleton object
   //todo package object
 
-  import scala.math._  // 引入包
+  import scala.math._ // 引入包
 
   // 通常，类都有一个伴生对象 companion object , 他的方法就跟Java中的静态方法一样。
 
@@ -49,7 +68,7 @@ object Main extends App {
   BigInt.apply(1234) * BigInt.apply(3456)
 
 
-  def test(): Unit ={
+  def test(): Unit = {
     println("测试合并代码")
     println("Test merge")
   }

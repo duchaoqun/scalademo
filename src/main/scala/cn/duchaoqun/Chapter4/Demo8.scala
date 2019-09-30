@@ -2,9 +2,9 @@ package cn.duchaoqun.Chapter4
 
 import scala.language.postfixOps
 /**
-  * 4.8 拉链操作
+  * 8 拉链操作
   */
-object Demo4_8 extends App {
+object Demo8 extends App {
 
   // 使用Tuple的原因之一是把多个值绑定在一起，以便让它们能够一起处理，这通常可以使用zip来完成。
   val symbols = Array("<", "-", ">")

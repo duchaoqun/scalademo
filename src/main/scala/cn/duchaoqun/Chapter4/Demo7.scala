@@ -3,12 +3,12 @@ package cn.duchaoqun.Chapter4
 import scala.language.postfixOps
 
 /**
-  * 4.7 Tuple
+  * 7 Tuple
   * Map是键值对的集合
   * 最简单的Tuple就是一个键值对。
   * Tuple是不同类型的元素的集合。
   */
-object Demo4_7 extends App {
+object Demo7 extends App {
   // 定义一个Tuple，类型是： Tuple3[Int, Double, java.lang.String]
   val tp0 = (1, 3.14, "Four")
 

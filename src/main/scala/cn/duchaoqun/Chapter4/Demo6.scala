@@ -3,10 +3,10 @@ package cn.duchaoqun.Chapter4
 import scala.collection.mutable
 
 /**
-  * 4.6 Scala与Java的互操作
+  * 6 Scala与Java的互操作
   * 调用Java方法会返回Java类型的Map，或者传递给Java方法的参数需要Java类型的Map
   */
-object Demo4_6 extends App {
+object Demo6 extends App {
 
   //历史包：已经弃用
   //import scala.collection.JavaConversions.*

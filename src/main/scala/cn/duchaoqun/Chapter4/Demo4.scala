@@ -1,9 +1,21 @@
 package cn.duchaoqun.Chapter4
 
 /**
-  * 1. Map分为可变和不可变
-  * 2. Tuple可以用来收集数据
+  * 4 迭代Map
   */
 object Demo4 extends App {
 
+  val map0 = Map("A" -> 1, "B" -> 2)
+
+  // 循环所有的内容
+  for ((k, v) <- map0) {
+    println(k + ":" + v)
+  }
+
+  // 反转一个Map
+  for ((k, v) <- map0) yield (v, k)
+
+  map0.keys
+  map0.keySet
+  map0.values
 }

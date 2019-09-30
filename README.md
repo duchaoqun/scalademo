@@ -39,14 +39,14 @@ Scala 学习笔记
 
 ## Chapter 4 Map【映射】和Tuple【元组】
 
-- 4.1 定义Map
-- 4.2 获取Map中的值
-- 4.3 更新Map中的值
-- 4.4 迭代Map
-- 4.5 SortedMap(树形映射)
-- 4.6 Scala与Java的互操作
-- 4.7 Tuple
-- 4.8 拉链操作
+- 1 定义Map
+- 2 获取Map中的值
+- 3 更新Map中的值
+- 4 迭代Map
+- 5 SortedMap(树形映射)
+- 6 Scala与Java的互操作
+- 7 Tuple
+- 8 zip【拉链操作】
 
 ## Chapter 5 Class【类】
 
@@ -157,11 +157,11 @@ Scala 学习笔记
 
 ## Chapter 14 模式匹配和样例类
 
-- 1. 更好的 switch 【TODO】
-- 2. 守卫【TODO】
-- 3. 模式中的变量【TODO】
-- 4. 类型模式【TODO】
-- 5. 匹配数组、列表、元组【TODO】
+- 1. match case 表达式
+- 2. 使用守卫的 match case 表达式
+- 3. match case 中的变量
+- 4. match case 匹配类型【L2】
+- 5. 匹配数组、列表、元组【TODO 197】
 - 6. 提取器【TODO】
 - 7. 变量声明中的模式【TODO】
 - 8. for 表达式中的模式【TODO】
@@ -242,3 +242,9 @@ Scala 学习笔记
   //  class Dog extends {
   //  }with Animals
 ```
+
+设计模式：里氏替换原则【Liskov Substitution Principle，LSP】
+1、子类可以实现父类的抽象方法，但不能覆盖父类的非抽象方法。
+2、子类中可以增加自己特有的方法。
+3、当子类的方法重载父类的方法时，方法的前置条件（即方法的输入/入参）要比父类方法的输入参数更宽松。
+4、当子类的方法实现父类的方法时（重写/重载或实现抽象方法），方法的后置条件（即方法的输出/返回值）要比父类更严格或相等。
