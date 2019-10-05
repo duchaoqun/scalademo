@@ -10,7 +10,7 @@ import java.io.File
   * Scala的设计目的之一就是能在简单的脚本化任务和大型程序之间保持良好的伸缩性。
   * scala.sys.process包提供了用于与shell程序交互的工具，你可以用scala编写shell脚本。
   */
-object Demo9_9 extends App {
+object Demo9 extends App {
   import sys.process._
 
   // 执行系统的ls -lart . 命令，执行结果返回到标准输出

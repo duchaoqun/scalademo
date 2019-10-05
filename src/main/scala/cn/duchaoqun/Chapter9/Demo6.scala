@@ -7,7 +7,7 @@ import java.io.PrintWriter
   * Scala默认没有对写入文件的支持。
   * 需要写入到文件，可以使用java.io.PrintWriter
   */
-object Demo9_6 extends App {
+object Demo6 extends App {
   val out = new PrintWriter("out.txt")
 
   for ( x <- 1 to 100 ){

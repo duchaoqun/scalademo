@@ -7,7 +7,7 @@ import java.io.{File, FileInputStream}
   * Scala 并没有提供读取二进制文件的方法。
   * 我们需要使用Java的类库。
   */
-object Demo9_5 extends App {
+object Demo5 extends App {
   val filename = "*****"
   val file = new File(filename)
   val in = new FileInputStream(file)

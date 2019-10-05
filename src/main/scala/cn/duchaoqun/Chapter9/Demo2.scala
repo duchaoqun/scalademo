@@ -5,7 +5,7 @@ import scala.io.Source
 /**
   * 9.2 读取字符
   */
-object Demo9_2 extends App {
+object Demo2 extends App {
   val source = Source.fromFile("C:\\Users\\DU\\Desktop\\test.txt", "UTF-8")
 
   // 要从文件中直接获取字符，可以直接迭代source对象。
