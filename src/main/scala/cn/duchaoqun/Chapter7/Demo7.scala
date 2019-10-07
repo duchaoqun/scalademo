@@ -1,16 +1,14 @@
 package cn.duchaoqun.Chapter7
 
 /**
-  * 1. 包也可以像内部类一样嵌套。
-  * 2. 包路径不是绝对路径。
-  * 3. 包声明x.y.z 并不自动将中间包x 和 x.y变成可见。
-  * 4. 位于文件顶部不带花括号的包声明在整个文件范围内有效。
-  * 5. 包对象可以持有函数和变量。
-  * 6. 引入语句可以引入包、类、和对象。
-  * 7. 引入语句可以出现在任意的位置上。
-  * 8. 引入语句可以重命名和隐藏特定成员。
-  * 9. java.lang、scala、Predef总是被引用。
+  * 7.7 包引入
+  * 包引入让你可以使用更短的名称，而不是原来较长的名称。
   */
 object Demo7 extends App {
+  // 引入之后你就可以使用较短的名称Timer，而不是java.util.Timer
+  import java.util.Timer
+
+  // 可以引入包中的所有内容 _ 和java的*
+  import java.util._
 
 }

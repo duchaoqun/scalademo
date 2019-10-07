@@ -11,7 +11,7 @@ package cn.duchaoqun.Chapter7
   * java.lang.StringBuffer而不是产生冲突。
   * 最后是Predef包，这个包中包含了很多有用的函数。
   */
-object Demo7_10 extends App {
+object Demo10 extends App {
   //然后再写引入的时候就可以省略scala前缀
   import collection.mutable.HashMap
 }

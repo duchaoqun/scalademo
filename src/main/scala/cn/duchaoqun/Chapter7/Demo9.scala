@@ -3,7 +3,7 @@ package cn.duchaoqun.Chapter7
 /**
   * 7.9 重命名和隐藏方法
   */
-object Demo7_9 extends App {
+object Demo9 extends App {
   // 如果你想引入包中的几个成员，你可以使用选择器
   import scala.collection.mutable.{HashMap, HashSet}
 
