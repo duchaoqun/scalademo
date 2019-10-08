@@ -112,7 +112,7 @@ object Demo1 extends App {
       case double1 if double1 >= 1000 || double1 < 2000 => "4"
       case double1 if double1 >= 2000 || double1 < 5000 => "5"
       case double1 if double1 >= 5000 || double1 < 10000 => "6"
-      case double1 if List("B","C","D").contains(double1) => _
+      //case double1 if List("B","C","D").contains(double1) => _
       case _ => "7"
     }
   }

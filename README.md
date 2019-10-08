@@ -4,12 +4,13 @@ Scala 学习笔记
 
 ## Chapter 1 基础知识
 
-- 1.1 Scala 历史
-- 1.2 Scala 应用案例
-- 1.3 Scala 环境准备
-- 1.4 数据类型 Char
-- 1.5 数据类型 String
-- 1.6 数据类型 Float
+- 1 Scala 历史
+- 2 Scala 应用案例
+- 3 Scala 环境准备
+- 4 Scala 基本数据类型介绍
+- 5 Scala 基本数据类型 String
+- 6 Scala 基本数据类型 Float
+- 7 Scala 基本数据类型 Char
 
 ## Chapter 2 控制结构和函数
 
@@ -39,7 +40,7 @@ Scala 学习笔记
 
 ## Chapter 4 Map【映射】和Tuple【元组】
 
-- 1 定义Map
+- 1 Map【映射】
 - 2 获取Map中的值
 - 3 更新Map中的值
 - 4 迭代Map
@@ -50,23 +51,17 @@ Scala 学习笔记
 
 ## Chapter 5 Class【类】
 
-- 5.1 简单类和无参方法
-- 5.2 带getter和setter的属性
-- 5.3 只有getter的属性
-- 5.4 对象私有字段
-- 5.5 Bean属性
-- 5.6 主构造器
-- 5.7 辅助构造器
-- 5.8 嵌套类
+- 1 简单类和无参方法
+- 2 "getter" and "setter" 属性
+- 3 只有getter的属性
+- 4 对象私有字段
+- 5 Bean属性
+- 6 主构造器
+- 7 辅助构造器
+- 8 嵌套类
+- 9 Any 类
 
 ## Chapter 6 object【对象】
-
-- 6.1 单例对象
-- 6.2 伴生对象
-- 6.3 扩展类或特质的对象
-- 6.4 apply方法
-- 6.5 应用程序对象（main方法）
-- 6.6 枚举
 
 ## Chapter 7 package and import【包和引入】
 
@@ -76,7 +71,7 @@ Scala 学习笔记
 - 4 文件顶部标记法
 - 5 包对象
 - 6 包可见性
-- 7 包引入
+- 7 import【引入包】
 - 8 任何地方都可以引入包
 - 9 重命名和隐藏方法
 - 10 隐式引入
@@ -112,13 +107,6 @@ Scala 学习笔记
 
 ## Chapter 10 Trait【特质】
 
-- 10.1 为什么没有多重继承？
-- 10.2 当作接口使用的特质
-- 10.3 带有具体实现的特质
-- 10.4 带有特质的对象
-- 10.5 叠加在一起的特质
-- 10.6 在特质中重写抽象方法
-
 ## Chapter 11 操作符
 
 - 11.1 标识符（感觉这个应该放在最前面来说）
@@ -133,17 +121,6 @@ Scala 学习笔记
 - 11.10 unapplySeq 方法
 
 ## Chapter 12 Function（函数）
-
-- 12.1 将函数赋值给变量
-- 12.2 匿名函数
-- 12.3 带"函数参数"的函数
-- 12.4 参数“类型”推断
-- 12.5 常用的高阶函数
-- 12.6 闭包
-- 12.7 SAM转换
-- 12.8 柯里化【TODO】
-- 12.9 控制抽象【TODO】
-- 12.10 return 表达式【TODO】
 
 ## Chapter 13 Collection（集合）
 
@@ -176,6 +153,14 @@ Scala 学习笔记
 - 17. 偏函数【TODO】
 
 ## Chapter 15 注解
+
+- 1. 什么是注解？
+- 2. 什么可以被注解？
+- 3. 注解参数
+- 4. 创建注解【TODO】
+- 5. 针对Java特性的注解【TODO】
+- 6. 用于优化的注解【TODO】
+- 7. 用于错误和警告的注解【TODO】
 
 ## Chapter 16 XML 处理
 
@@ -217,6 +202,7 @@ Scala 学习笔记
 ## Chapter 23 类库
 
 - scala.util.Random
+- java.lang.System
 
 ## Demo Jasper Report
 
@@ -236,6 +222,8 @@ Scala 学习笔记
 - 解析HTML包：https://jsoup.org/
 
 ## todo
+
+## 单元测试
 
 ```scala
   //TODO 类继承中的 " 提前定义 "

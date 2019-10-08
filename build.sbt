@@ -39,3 +39,8 @@ libraryDependencies += "org.xerial" % "sqlite-jdbc" % "3.28.0"
 //   Attributed.blank[File](file(baseDirectory.value + "/lib/jcommon-1.0.23.jar")),
 //   Attributed.blank[File](file(baseDirectory.value + "/lib/jfreechart-1.0.19.jar"))
 // )
+
+
+// 单元测试
+// https://mvnrepository.com/artifact/junit/junit
+libraryDependencies += "junit" % "junit" % "4.12"
