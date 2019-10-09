@@ -36,7 +36,17 @@
 
 ## 常用的高阶函数
 
-- 【Demo11】
+- 【Demo23】collect
+- 【Demo16】filter
+- 【Demo18】flatMap
+- 【Demo21】foldLeft
+- 【Demo22】foldRight
+- 【Demo15】foreach
+- 【Demo11】map
+- 【Demo19】reduce
+- 【Demo17】reduceLeft
+- 【Demo20】reduceRight
+- 【TODO】sortWith
 
 ## 闭包
 

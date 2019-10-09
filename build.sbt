@@ -1,8 +1,8 @@
 
 // 项目基本信息
 name := "ScalaDemo"
-organization := "info.aoye"
-version := "0.0.2-SNAPSHOT"
+organization := "cn.duchaoqun"
+version := "0.0.3-SNAPSHOT"
 scalaVersion := "2.13.0"
 
 // PG 数据库驱动

@@ -1,12 +1,9 @@
 package cn.duchaoqun.Chapter6
 
-/**
-  * 6.2 伴生对象
-  * 在 Java 中你通常会用到既有实例又有静态方法的类。
-  * 类和伴生对象可以相互访问私有特性，它们必须在一个源文件中。
-  */
-object Demo2 extends App {
-
+object Demo02 extends App {
+  // BigInt是一个类，使用BigInt的伴生对象的 apply 方法构建一个对象。
+  import scala.math._
+  println(BigInt(123) * BigInt(123))
 }
 
 class Account1{

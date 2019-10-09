@@ -2,7 +2,7 @@ package cn.duchaoqun.Chapter23
 
 import scala.sys.SystemProperties
 
-object Demo2 extends App {
+object Demo02 extends App {
   // 退出当前程序.
   System.exit(1)
 

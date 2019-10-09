@@ -1,18 +1,20 @@
-# Scala
+# Scala 学习笔记
 
-Scala 学习笔记
+## Chapter 00 
 
-## Chapter 1 基础知识
+## Chapter 01 基础知识
 
-- 1 Scala 历史
-- 2 Scala 应用案例
-- 3 Scala 环境准备
-- 4 Scala 基本数据类型介绍
-- 5 Scala 基本数据类型 String
-- 6 Scala 基本数据类型 Float
-- 7 Scala 基本数据类型 Char
+### Scala 历史
+### Scala 应用案例
+### Scala 环境准备
+### Scala 基本数据类型介绍
+### Scala 基本数据类型 String
+### Scala 基本数据类型 Float
+### Scala 基本数据类型 Char
 
-## Chapter 2 控制结构和函数
+### 【Demo08】基本类型 Option
+
+## Chapter 02 控制结构和函数
 
 - 2.1 条件表达式 if
 - 2.2 语句终止
@@ -27,7 +29,7 @@ Scala 学习笔记
 - 2.11 懒值
 - 2.12 Exception（异常）
 
-## Chapter 3 Array【数组】
+## Chapter 03 Array【数组】
 
 - 3.1 Array(定长数组，不可变)
 - 3.2 变长数组：数组缓冲
@@ -38,7 +40,7 @@ Scala 学习笔记
 - 3.7 多维数组
 - 3.8 Scala与Java的互操作
 
-## Chapter 4 Map【映射】和Tuple【元组】
+## Chapter 04 Map【映射】和Tuple【元组】
 
 - 1 Map【映射】
 - 2 获取Map中的值
@@ -49,21 +51,11 @@ Scala 学习笔记
 - 7 Tuple
 - 8 zip【拉链操作】
 
-## Chapter 5 Class【类】
+## Chapter 05 class
 
-- 1 简单类和无参方法
-- 2 "getter" and "setter" 属性
-- 3 只有getter的属性
-- 4 对象私有字段
-- 5 Bean属性
-- 6 主构造器
-- 7 辅助构造器
-- 8 嵌套类
-- 9 Any 类
+## Chapter 06 object
 
-## Chapter 6 object【对象】
-
-## Chapter 7 package and import【包和引入】
+## Chapter 07 package and import【包和引入】
 
 - 1 package
 - 2 作用域规则
@@ -76,7 +68,7 @@ Scala 学习笔记
 - 9 重命名和隐藏方法
 - 10 隐式引入
 
-## Chapter 8 extends【继承】
+## Chapter 08 extends【继承】
 
 - 8.1 扩展类
 - 8.2 重写方法
@@ -91,7 +83,7 @@ Scala 学习笔记
 - 8.11 继承层级
 - 8.12 对象相等性【L1】
 
-## Chapter 9 文件和正则表达式
+## Chapter 09 文件和正则表达式
 
 - 1 读取行
 - 2 读取字符
@@ -138,19 +130,7 @@ Scala 学习笔记
 - 2. 使用守卫的 match case 表达式
 - 3. match case 中的变量
 - 4. match case 匹配类型【L2】
-- 5. 匹配数组、列表、元组【TODO 197】
-- 6. 提取器【TODO】
-- 7. 变量声明中的模式【TODO】
-- 8. for 表达式中的模式【TODO】
-- 9. 样例类【TODO】
-- 10. copy方法和带名参数【TODO】
-- 11. case语句中的中置表达法【TODO】
-- 12. 匹配嵌套结构【TODO】
-- 13. 样例类是邪恶的吗？【TODO】
-- 14. 密封类【TODO】
-- 15. 模拟枚举【TODO】
-- 16. Option类型【TODO】
-- 17. 偏函数【TODO】
+
 
 ## Chapter 15 注解
 
@@ -201,8 +181,12 @@ Scala 学习笔记
 
 ## Chapter 23 类库
 
-- scala.util.Random
-- java.lang.System
+- 【Demo01】scala.util.Random
+- 【Demo02】java.lang.System
+
+## Demo 
+
+
 
 ## Demo Jasper Report
 

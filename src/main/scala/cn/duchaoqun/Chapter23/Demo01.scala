@@ -2,7 +2,7 @@ package cn.duchaoqun.Chapter23
 
 import scala.util.Random
 
-object Demo1 extends App {
+object Demo01 extends App {
   // 构造对象
   val random1 = new Random()
   val random2 = new Random(10)

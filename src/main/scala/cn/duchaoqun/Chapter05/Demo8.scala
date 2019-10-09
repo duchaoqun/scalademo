@@ -1,4 +1,4 @@
-package cn.duchaoqun.Chapter5
+package cn.duchaoqun.Chapter05
 
 import scala.collection.mutable.ArrayBuffer
 

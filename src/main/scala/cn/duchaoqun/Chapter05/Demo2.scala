@@ -1,4 +1,4 @@
-package cn.duchaoqun.Chapter5
+package cn.duchaoqun.Chapter05
 
 /**
   * 5.2 "getter" and "setter" 属性
