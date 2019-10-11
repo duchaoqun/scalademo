@@ -7,7 +7,7 @@ package cn.duchaoqun.Chapter01
   *
   * 字符串中的字符下标是从 0 开始的，最后一个需要-1 ，留意空格字符，从表面上是看不出来的。
   */
-object Demo5 extends App {
+object Demo05 extends App {
 
   // 创建字符串对象
   val str_0 = "Hello! Scala"

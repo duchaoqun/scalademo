@@ -8,7 +8,7 @@ package cn.duchaoqun.Chapter01
   *
   * 参考Demo7 ： Char 字符类型，字符是半角单引号括住的字符。
   */
-object Demo4 extends App {
+object Demo04 extends App {
 
   // 基本数值类型
   // Int 数值类型

@@ -1,6 +1,6 @@
 package cn.duchaoqun.Chapter01
 
-object Demo1 extends App {
+object Demo01 extends App {
 
   // 每个表达式都有一个类型，例如 “val x = 1” 这个表达式就是Int类型。
   val x = 1

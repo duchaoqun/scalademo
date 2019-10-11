@@ -4,15 +4,14 @@
 
 ## Chapter 01 基础知识
 
-### Scala 历史
-### Scala 应用案例
-### Scala 环境准备
-### Scala 基本数据类型介绍
-### Scala 基本数据类型 String
-### Scala 基本数据类型 Float
-### Scala 基本数据类型 Char
-
-### 【Demo08】基本类型 Option
+### 历史
+### 应用案例
+### 环境准备
+### 基本数据类型介绍
+### 基本数据类型 String
+### 基本数据类型 Float
+### 基本数据类型 Char
+### 基本类型 Option
 
 ## Chapter 02 控制结构和函数
 
