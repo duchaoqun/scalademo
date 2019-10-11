@@ -11,3 +11,4 @@
 - 【Demo08】标准类库中的 Option 类型用样例类来表示那种可能存在、也可能不存在的值。
 - Option 的子类型 Some
 - Option 的子类型 None
+- Option 通常会与 match case 表达式一起使用。

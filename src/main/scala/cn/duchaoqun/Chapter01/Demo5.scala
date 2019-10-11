@@ -1,4 +1,4 @@
-package cn.duchaoqun.Chapter1
+package cn.duchaoqun.Chapter01
 
 /**
   * 字符串 String 是不可变对象，在做相应的操作之后需要定义一个新对象来接收，如果需要使用可变内容，可以先了解 StringBuilder 对象。

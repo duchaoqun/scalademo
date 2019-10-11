@@ -1,4 +1,4 @@
-package cn.duchaoqun.Chapter1
+package cn.duchaoqun.Chapter01
 
 object Demo6 extends App {
   // 正负无穷大

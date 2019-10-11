@@ -1,4 +1,4 @@
-package cn.duchaoqun.Chapter1
+package cn.duchaoqun.Chapter01
 
 /**
   * 1.4 Scala 基本数据类型
