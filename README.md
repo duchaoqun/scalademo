@@ -60,7 +60,7 @@
 
 ## Chapter 05 class
 
-## Chapter 06 object
+## Chapter 06 object【单例对象与伴生对象】
 
 ## Chapter 07 package and import【包和引入】
 
@@ -177,44 +177,16 @@
 
 ## Chapter 22 定界延续
 
-## Chapter 23 类库
+## Chapter 23 util 类库
 
-- 【Demo01】scala.util.Random
-- 【Demo02】java.lang.System
+- scala.util.Random
+- scala.util.Properties
+- scala.util.{Try, Success, Failure}
+- scala.util.Either
+- scala.util.control.Breaks
 
-## Demo 
+## Chapter 24 math 类库
 
-- 
+## Chapter 25 sys 类库
 
-## Demo Jasper Report
-
-使用JasperReport工具生成报表
-
-## Demo
-
-### io
-
-#### Source 
-
-- FromFile.scala 针对文件的操作
-
-
-## Other 
-
-- 解析HTML包：https://jsoup.org/
-
-## todo
-
-## 单元测试
-
-```scala
-  //TODO 类继承中的 " 提前定义 "
-  //  class Dog extends {
-  //  }with Animals
-```
-
-设计模式：里氏替换原则【Liskov Substitution Principle，LSP】
-1、子类可以实现父类的抽象方法，但不能覆盖父类的非抽象方法。
-2、子类中可以增加自己特有的方法。
-3、当子类的方法重载父类的方法时，方法的前置条件（即方法的输入/入参）要比父类方法的输入参数更宽松。
-4、当子类的方法实现父类的方法时（重写/重载或实现抽象方法），方法的后置条件（即方法的输出/返回值）要比父类更严格或相等。
+- scala.sys.process._

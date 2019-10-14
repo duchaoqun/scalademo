@@ -10,19 +10,21 @@ package cn.duchaoqun.Chapter06
   * 被 Fork 出来的应用程序进程默认会有主线程，而我们的 main 方法就是默认在主线程中的。
   */
 object Demo05{
+  /**
+    * Scala 程序的入口点也可以直接继承App特质，它帮我们完成的 main 的编写，获取命令行参数直接使用args即可。
+    */
+  object Demo6_5_1 extends App{
+    println("Hello Scala")
+    println(args)
+    println(this.args(0))
+    println(this.args(1))
+  }
+
   def main(args: Array[String]): Unit = {
     println("Hello Scala")
   }
 }
 
 
-/**
-  * Scala 程序的入口点也可以直接继承App特质，它帮我们完成的 main 的编写，获取命令行参数直接使用args即可。
-  */
-object Demo6_5_1 extends App{
-  println("Hello Scala")
-  println(args)
-  println(this.args(0))
-  println(this.args(1))
-}
+
 

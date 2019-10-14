@@ -12,6 +12,9 @@
 ### 【Demo02】变长数组（ArrayBuffer）
 
 - 对于那种长度需要变化的数组，Java 有 ArrayList，C++ 有vector，Scala 中等效的数据结构是 ArrayBuffer。
+- 所有 Array 能用的方法，ArrayBuffer 都能用。
+- 创建 ArrayBuffer 对象，需要注意类型参数和小括号。
+- 在 ArrayBuffer 尾端添加和移除元素是一个非常高效的操作。
 
 ### 【Demo03】遍历数组 Array 和 ArrayBuffer
 
@@ -30,3 +33,5 @@
 - 通过数组的数组来实现
 
 ### 【Demo08】Scala 与 Java 的互操作
+
+- Java 集合与 Scala 集合的相互转换

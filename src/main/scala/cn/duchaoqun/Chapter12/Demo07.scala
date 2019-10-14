@@ -10,31 +10,32 @@ object Demo07 extends App {
   // 官方 List 类库的 foreach 函数
 
   // 定义一个 Function 用来作为参数，当然这里只能操作 Int 类型的元素，List 可以容纳各种类型。
-  def f0(x: Int): Unit = {
-    println(x)
-  }
+  val func0 = (x: Int) => println(x)
 
-  // 使用泛型，更好的写法。
+  // 使用泛型，更好的写法？ // TODO 函数如何使用泛型？
   def f1[T](x: T): Unit = {
     println(x)
   }
 
-  list1.foreach(x => println(x))  // 使用匿名函数
-  list1.foreach(f0)               // 使用我们定义的函数
-  list1.foreach(f1(_))            // 使用我们定义的函数
+  list1.foreach(x => println(x)) // 使用匿名函数
+  list1.foreach(func0) // 使用我们定义的函数
+  list1.foreach(f1(_)) // 使用我们定义的函数
 
 
-  // 定义一个函数，计算乘方
-  def func1 = (x: Double) => x * x
+  // 定义一个 Function ，计算乘方
+  val func1 = (x: Double) => x * x
 
+  // TODO def 定义的是函数还是方法？ 如何使用 val 来定义高价函数。
   // 定义一个“接受函数参数”的函数，这个就是高阶函数（higher-order function）
   // 计算“参数函数”在 0.25 的时候的返回值
   def valueAtOneQuarter(f: Double => Double) = f(0.25)
+
   // 知识点：高阶函数的类型是：{(Double) => Double } => Double
 
 
   // 定义一个“返回结果是函数”的函数。
   def mulBy(factor: Double) = (x: Double) => factor * x
+
   // mulBy(3) 返回的是 (x: Double) => 3 * x
   val quintuple = mulBy(5)
   // 知识点：此高级函数的类型是 Double => {(Double) => Double }

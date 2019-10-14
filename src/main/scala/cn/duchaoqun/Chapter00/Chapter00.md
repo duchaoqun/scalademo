@@ -1,6 +1,40 @@
 ### 历史
+
+背景：整个 IT 编程技术的发展史，其实就是一部封装史。
+一. Function 时代：C 语言中提供了函数的概念，把若干条语句进行封装和复用。
+二. Class 时代：C(java)等语言提供类的对象，把数据和处理数据业务的逻辑封装起来。
+三. 框架时代：最大的封装就是使用框架！把数据，代码和驱动封装起来。
+
 ### 应用案例
 ### 环境准备
+
+### 官方文档
+
+  // 【官方网站】
+  // https://www.scala-lang.org/
+
+  // 【官方文档】
+  // https://www.scala-lang.org/api/current/    当前最新版本的API文档
+  // https://docs.scala-lang.org/api/all.html   各个版本的API文档
+  // https://docs.scala-lang.org/tutorials/
+
+  // 【AKKA】
+  // https://doc.akka.io/api/akka/2.5.11/akka/index.html
+
+  // 【Play FrameWork 官方文档】
+  // https://www.playframework.com/documentation/2.7.x/Home
+  // https://www.playframework.com/documentation/2.8.0-M5/Home
+
+  // 【PlaySlick文档】
+  // http://slick.lightbend.com/doc/3.2.3/
+  // http://slick.lightbend.com/doc/3.2.3/api/index.html#package
+
+  // 【Spark官方文档】
+  // http://spark.apache.org/docs/
+  // http://spark.apache.org/docs/latest/api/scala/index.html
+
+  // 【其他文档】
+  // https://www.scala-js.org/api/scalajs-library/latest/
 
     //关于方法的调用
     //1. 如果方法不需要参数，那么可以省略括号
@@ -35,3 +69,75 @@
     private[sql] 表明这个类只能在sql包下面使用.
     
     ## 代码与框架隔离开??? 是什么概念???
+
+
+  // 退出当前程序.
+  System.exit(1)
+
+  System.lineSeparator()  // 根据操作系统获取换行符
+
+  // 获取操作系统参数
+  val pp = new SystemProperties  // 创建系统参数对象
+  println(pp.get("user.dir"))    // 获取系统参数,内容是一个Map对象,get的结果是Some对象
+
+  // 使用系统代理
+  System.setProperty("http.maxRedirects", "50")
+  System.getProperties.setProperty("proxySet", "true")
+  val ip = "127.0.0.1"
+  System.getProperties.setProperty("http.proxyHost", ip)
+  System.getProperties.setProperty("http.proxyPort", "1080")、
+  
+  
+  
+  ## 单元测试
+  
+  ```scala
+    //TODO 类继承中的 " 提前定义 "
+    //  class Dog extends {
+    //  }with Animals
+  ```
+  
+  设计模式：里氏替换原则【Liskov Substitution Principle，LSP】
+  1、子类可以实现父类的抽象方法，但不能覆盖父类的非抽象方法。
+  2、子类中可以增加自己特有的方法。
+  3、当子类的方法重载父类的方法时，方法的前置条件（即方法的输入/入参）要比父类方法的输入参数更宽松。
+  4、当子类的方法实现父类的方法时（重写/重载或实现抽象方法），方法的后置条件（即方法的输出/返回值）要比父类更严格或相等。
+  
+  ## Demo Jasper Report
+  
+  使用JasperReport工具生成报表
+  
+  #### Source 
+  
+  - FromFile.scala 针对文件的操作
+  
+  ## Other 
+  
+  - 解析HTML包：https://jsoup.org/
+
+  
+  The difference between method and function? 
+  * 7. 技巧: 如果方法的返回类型是Unix,这时就可以省略定义结构中的" :Unit = "
+  
+  
+
+
+- Scala 类库里面有 22 个 function 特质。 Function0
+
+  def javaVersion1(): Unit = () => scala.sys.props("java.version") //如返回Unit则需要参数,仅使用方法的副作用处理输入对象
+  def javaVersion2 = () => scala.sys.props("java.version") //不需要参数,定义的是方法?
+  def test1(): Unit = {
+    scala.sys.props("java.version")
+  }
+  
+  // 省略的函数体花括号
+  def matchTestA(x: Any): Any = {
+    x match {
+      case 1 => "one"
+      case _ => "many"
+    }
+  }
+  def matchTestB(x: Any): Any = x match {
+    case 1 => "one"
+    case _ => "many"
+  }
