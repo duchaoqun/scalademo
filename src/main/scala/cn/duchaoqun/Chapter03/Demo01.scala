@@ -1,16 +1,15 @@
 package cn.duchaoqun.Chapter03
 
-object Demo3_1 extends App {
+object Demo01 extends App {
 
-  // 如果你需要一个长度不变的数组，可以使用Scala中的Array，必须声明类型(泛型)。
-
-  val array_1 = new Array[Int](10)           // 创建 Int 类型数组，所有元素初始化为0。
-  val array_2 = new Array[String](10)        // 创建 String 类型数组，所有元素初始化为null。
-  val array_3 = new Array[Float](100)        // 创建 Float 类型数组，默认值是0.0。
-  val array_4 = Array("Scala","Java")        // 使用伴生对象的 apply 方法创建长度为 2 的 String 类型数组。
+  val array_1 = new Array[Int](10)            // 创建 Int 类型数组，所有元素初始化为0。
+  val array_2 = new Array[String](10)         // 创建 String 类型数组，所有元素初始化为null。
+  val array_3 = new Array[Float](100)         // 创建 Float 类型数组，默认值是0.0。
+  val array_4 = Array("Scala","Java")         // 使用伴生对象的 apply 方法创建长度为 2 的 String 类型数组。
+  val array_a = Array[Any]("Scala",123) //
   val array_5 = Array[Int](1, 2, 3)     // 使用半生对象的 apply 方式创建数字数组，给定初始值。
-  val array_6 = Array.apply(1, 2, 3, 4, 5)   // 不用声明类型，是因为scala的类型推倒能力。
-  val array_7 = Array(1, 2, 3, 4, 5)         // 这里可以去掉泛型，是因为scala的类型推倒能力。
+  val array_6 = Array.apply(1, 2, 3, 4, 5)    // 不用声明类型，是因为scala的类型推倒能力。
+  val array_7 = Array(1, 2, 3, 4, 5)          // 这里可以去掉泛型，是因为scala的类型推倒能力。
 
 
   // 查看，使用 () 来访问数组。

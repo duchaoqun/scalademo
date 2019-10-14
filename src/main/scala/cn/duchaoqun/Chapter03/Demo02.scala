@@ -1,10 +1,6 @@
 package cn.duchaoqun.Chapter03
 
-/**
-  * 3.2 变长数组：数组缓冲
-  * 对于那种长度需要变化的数组，Java有ArrayList，C++有vector，Scala中等效的数据结构是ArrayBuffer
-  */
-object Demo3_2 extends App {
+object Demo02 extends App {
 
   import scala.collection.mutable.ArrayBuffer
 

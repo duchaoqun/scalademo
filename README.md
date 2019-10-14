@@ -9,39 +9,46 @@
 ## Chapter 01 基础知识
 
 - 基本数据类型介绍
-- 基本数据类型 String
-- 基本数据类型 Float
+- 基本数据类型 Byte
 - 基本数据类型 Char
+- 基本数据类型 Short
+- 基本数据类型 Int
+- 基本数据类型 Long
+- 基本数据类型 Float
+- 基本数据类型 Double
+- 基本数据类型 Boolean
+- 基本类型 String
 - 基本类型 Option
 
 ## Chapter 02 控制结构和函数
 
-- 2.1 条件表达式 if
-- 2.2 语句终止
-- 2.3 块表达式和赋值
-- 2.4 输入和输出
-- 2.5 循环语句 while
-- 2.6 循环语句 for
-- 2.7 函数（function）
-- 2.8 默认参数和带名参数
-- 2.9 变长参数
-- 2.10 过程（procedure）
-- 2.11 懒值
-- 2.12 Exception（异常）
+- 条件表达式 if
+- 语句终止
+- 块表达式和赋值
+- 输入和输出
+- 循环语句 while
+- 循环语句 for
+- 函数（function）
+- 默认参数和带名参数
+- 变长参数
+- 过程（procedure）
+- 懒值（lazy）
+- 异常（Exception）
 
 ## Chapter 03 Array【数组】
 
-- 3.1 Array(定长数组，不可变)
-- 3.2 变长数组：数组缓冲
-- 3.3 遍历数组Array和缓冲数组ArrayBuffer
-- 3.4 数组转换
-- 3.5 常用算法
-- 3.6 解读ScalaDoc ? TraversableOnce特质
-- 3.7 多维数组
-- 3.8 Scala与Java的互操作
+- Array（定长数组，不可变）
+- 变长数组（ArrayBuffer）
+- 遍历数组 Array 和 ArrayBuffer
+- 数组转换
+- 常用方法
+- 解读ScalaDoc ? TraversableOnce特质
+- 多维数组
+- Scala 与 Java 的互操作
 
 ## Chapter 04 Map【映射】和Tuple【元组】
 
+- 【TODO】书中40页
 - 1 Map【映射】
 - 2 获取Map中的值
 - 3 更新Map中的值
@@ -85,18 +92,6 @@
 
 ## Chapter 09 文件和正则表达式
 
-- 1 读取行
-- 2 读取字符
-- 3 读取词法单元和数字【略】
-- 4 从URL或者其他来源读取数据
-- 5 读取二进制文件
-- 6 写入文本文件
-- 7 访问目录【待定】
-- 8 序列化
-- 9 进程控制【A2】
-- 10 正则表达式
-- 11 正则表达式组
-
 ## Chapter 10 Trait
 
 - 为什么没有多重继承？
@@ -125,14 +120,6 @@
 ## Chapter 12 Function（函数）
 
 ## Chapter 13 Collection（集合）
-
-- 13.1 主要的集合特质
-- 13.2 可变和不可变集合
-- 13.3 Seq(序列)
-- 13.4 List(不可变列表)
-- 13.5 ListBuffer(可变列表)
-- 13.6 Set(集合)
-- 13.7 用于添加或删除元素的操作符【TODO】
 
 ## Chapter 14 模式匹配和样例类
 
@@ -197,7 +184,7 @@
 
 ## Demo 
 
-
+- 
 
 ## Demo Jasper Report
 

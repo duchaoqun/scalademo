@@ -2,9 +2,6 @@ package cn.duchaoqun.Chapter09
 
 import java.io.{File, FileWriter}
 
-/**
-  * 9.1 读取行
-  */
 object Demo1 extends App {
   import scala.io.Source
   // Read File // 读取一个文件，返回BufferedSource。

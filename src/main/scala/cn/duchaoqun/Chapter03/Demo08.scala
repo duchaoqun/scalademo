@@ -1,12 +1,6 @@
 package cn.duchaoqun.Chapter03
 
-import scala.collection.mutable
-
-/**
-  * 3.8 Scala与Java的互操作
-  * 如果你调用“接受或者返回java.util.List”的Java方法
-  */
-object Demo3_8 extends App {
+object Demo08 extends App {
 
   //java.long.ProcessBuilder类有一个以List<String>为参数的构造器
   //import scala.collection.JavaConversions.bufferAsJavaList  // 已经弃用

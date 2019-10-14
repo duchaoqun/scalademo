@@ -48,8 +48,9 @@ libraryDependencies += "junit" % "junit" % "4.12"
 // 记录日志的相关包
 // https://github.com/lightbend/scala-logging
 //libraryDependencies += "ch.qos.logback" % "logback-classic" % "1.2.3"
-//libraryDependencies += "com.typesafe.scala-logging" %% "scala-logging" % "3.9.0"
 
+// https://mvnrepository.com/artifact/com.typesafe.scala-logging/scala-logging
+libraryDependencies += "com.typesafe.scala-logging" %% "scala-logging" % "3.9.2"
 
 // Spark相关bao
 // https://mvnrepository.com/artifact/org.apache.spark/spark-core

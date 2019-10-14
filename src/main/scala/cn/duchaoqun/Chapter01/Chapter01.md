@@ -2,11 +2,23 @@
 
 ### 【Demo04】基本数据类型介绍
 
-### 【Demo05】基本数据类型 String
+### 【TODO】基本数据类型 Byte
+
+### 【Demo07】基本数据类型 Char
+
+### 【TODO】基本数据类型 Short
+
+### 【TODO】基本数据类型 Int
+
+### 【TODO】基本数据类型 Long
 
 ### 【Demo06】基本数据类型 Float
 
-### 【Demo07】基本数据类型 Char
+### 【TODO】基本数据类型 Double
+
+### 【TODO】基本数据类型 Boolean
+
+### 【Demo05】基本类型 String
 
 ### 【Demo08】基本类型 Option
 

@@ -4,9 +4,9 @@ import scala.collection.mutable.ArrayBuffer
 
 /**
   * 3.6 解读ScalaDoc
-  * 查询API可以让我们使用很多有意思的方法，官方已经为我们写好了很多功能。
+  *
   */
-object Demo3_6 extends App {
+object Demo06 extends App {
 
   val a = ArrayBuffer(1, 2, 3)
   a.append(4, 5, 6) // 追加元素到缓冲数组，注意这里是缓冲数组，不是数组

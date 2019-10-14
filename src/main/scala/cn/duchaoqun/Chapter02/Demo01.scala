@@ -1,10 +1,6 @@
 package cn.duchaoqun.Chapter02
 
-/**
-  * 知识点：Scala 中的 if 条件表达式是有返回值的，可以把他的值赋给一个对象。
-  */
-object Demo2_1 extends App {
-  //
+object Demo01 extends App {
   val x = 1
 
   // test1 的类型是 Int 类型，可以使用条件表达式初始化一个 val 对象，结果类型是 Int 类型。
@@ -36,7 +32,7 @@ object Demo2_1 extends App {
   }
 
   // 条件表达式 if 可以用在 for 循环等其他控制结构中。
-  for (i <- 0 to 10 if i%2 == 0) {
+  for (i <- 0 to 10 if i % 2 == 0) {
     println(i)
   }
 }

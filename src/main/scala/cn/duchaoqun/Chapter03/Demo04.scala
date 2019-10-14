@@ -1,10 +1,6 @@
 package cn.duchaoqun.Chapter03
 
-/**
-  * 3.4 数组转换
-  * 从一个数组或者缓冲数组出发，以某种方式对他进行转换，产生一个新的数组（不会改变原来数组）。
-  */
-object Demo3_4 extends App {
+object Demo04 extends App {
   val a = Array(1, 2, 3, 4, 5, 6)
   // 创建了一个与原始类型相同的集合
   val res1 = for (x <- a) yield x * 2

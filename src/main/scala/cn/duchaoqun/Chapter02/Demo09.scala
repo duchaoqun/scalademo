@@ -2,10 +2,7 @@ package cn.duchaoqun.Chapter02
 
 import java.text.MessageFormat
 
-/**
-  * 2.9 变长参数
-  */
-object Demo2_9 extends App {
+object Demo09 extends App {
 
   // 定义一个函数，接收的参数的长度是可变化的。
   // 函数得到的是一个Seq类型的参数。

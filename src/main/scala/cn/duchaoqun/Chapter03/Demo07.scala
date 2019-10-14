@@ -2,9 +2,9 @@ package cn.duchaoqun.Chapter03
 
 /**
   * 3.7 多维数组
-  * 通过数组的数组来实现
+  *
   */
-object Demo3_7 extends App {
+object Demo07 extends App {
   // 定义一个3行4列的二维数组，注意需要类型
   val matrix = Array.ofDim[Double](3, 4)
   // 访问二维数组中的元素
