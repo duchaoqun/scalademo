@@ -117,7 +117,7 @@
 - 11.9 带单个参数或无参数的提取器
 - 11.10 unapplySeq 方法
 
-## Chapter 12 Function（函数）
+## Chapter 12 Method and Function（方法与函数）
 
 ## Chapter 13 Collection（集合）
 
