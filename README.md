@@ -46,19 +46,17 @@
 - 多维数组
 - Scala 与 Java 的互操作
 
-## Chapter 04 Map【映射】和Tuple【元组】
+## Chapter 04 Map and Tuple【映射和元组】
 
-- 【TODO】书中40页
-- 1 Map【映射】
-- 2 获取Map中的值
-- 3 更新Map中的值
-- 4 迭代Map
-- 5 SortedMap(树形映射)
-- 6 Scala与Java的互操作
-- 7 Tuple
-- 8 zip【拉链操作】
+- 创建 Map 对象
+- 获取 Map 中的值
+- 更新 Map 中的值
+- 迭代 Map
+- 树形 Map
+- Tuple
+- zip【拉链操作】
 
-## Chapter 05 class
+## Chapter 05 class  以及 类型系统
 
 ## Chapter 06 object【单例对象与伴生对象】
 
@@ -75,20 +73,7 @@
 - 9 重命名和隐藏方法
 - 10 隐式引入
 
-## Chapter 08 extends【继承】
-
-- 8.1 扩展类
-- 8.2 重写方法
-- 8.3 类型检查和转换
-- 8.4 受保护的字段和方法
-- 8.5 父类的构造
-- 8.6 重写字段 
-- 8.7 匿名子类
-- 8.8 抽象类
-- 8.9 抽象字段
-- 8.10 构造顺序和提前定义【L3】
-- 8.11 继承层级
-- 8.12 对象相等性【L1】
+## Chapter 08 extends
 
 ## Chapter 09 文件和正则表达式
 
@@ -117,7 +102,30 @@
 - 11.9 带单个参数或无参数的提取器
 - 11.10 unapplySeq 方法
 
-## Chapter 12 Method and Function（方法与函数）
+## Chapter 12 Method and Procedure and Function（方法、过程、函数）
+
+- 关于方法、过程、函数，以及它们之间的区别
+- 定义方法、过程、函数
+- 有参数的函数 - 斐波那契数列
+- 使用默认参数的函数
+- 可变长的参数
+- 参数“类型”推断
+- 使用“函数作为参数”的函数
+- 函数的结果类型
+- 将函数赋值给 val 变量
+- 使用匿名函数
+- 高阶函数 collect
+- 高阶函数 filter
+- 高阶函数 flatMap
+- 高阶函数 foldLeft
+- 高阶函数 foldRight
+- 高阶函数 foreach
+- 高阶函数 map
+- 高阶函数 reduce
+- 高阶函数 reduceLeft
+- 高阶函数 reduceRight
+- 柯里化
+- 副作用（side effect）
 
 ## Chapter 13 Collection（集合）
 
@@ -190,3 +198,4 @@
 ## Chapter 25 sys 类库
 
 - scala.sys.process._
+

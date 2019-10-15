@@ -5,6 +5,11 @@
 二. Class 时代：C(java)等语言提供类的对象，把数据和处理数据业务的逻辑封装起来。
 三. 框架时代：最大的封装就是使用框架！把数据，代码和驱动封装起来。
 
+### 起点
+
+- 在Scala中所有内容都是对象。
+- 推荐使用链式表达式：rdd.map reduce foreach 返回当前对象，这样的链式操作。
+
 ### 应用案例
 ### 环境准备
 
@@ -141,3 +146,32 @@
     case 1 => "one"
     case _ => "many"
   }
+  
+
+1. 在Scala中所有内容都是对象。
+1. 推荐使用链式表达式 rdd.map reduce foreach 返回的都是当前对象，这样的链式操作。
+```scala
+  def setName(_name:String):this.type = {
+    name = _name
+    this
+  }
+```
+1. Scala中使用关键字lazy来定义惰性变量，实现延迟加载(懒加载)。
+1. 惰性变量只能是不可变变量，并且只有在调用惰性变量时，才会去实例化这个变量。
+
+
+1. 使用Option(None,Some),用None取代Null
+
+
+## Execute Program
+
+执行程序方法：自动找到Main方法
+$ java -jar scala-assembly-0.0.1.jar
+
+如果项目有多个入口的时候需要选择执行入口：手动指定Main方法
+$ java -cp scala-assembly-0.0.1.jar cn.com.rexen.spark.Hello
+
+## 统一访问原则
+
+某个模块提供的所有服务都应该能通过统一的表示法访问到，至于它们是通过存储还是通过计算来实现的，从访问方式上无法得知。
+（当然，在JVM中，服务总是通过方法来实现的，要么是编译器合成的方法，要么由程序员提供）

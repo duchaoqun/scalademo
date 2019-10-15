@@ -46,3 +46,6 @@
 ### 【Demo21】scala.collection.mutable.SortedSet
 ### 【Demo22】scala.collection.mutable.Stack
 ### 【Demo23】scala.collection.mutable.StringBuilder
+
+### 【Demo24】scala.collection.Iterable
+- Scala Iterator（迭代器）不是一个集合，它是一种用于访问集合的方法。

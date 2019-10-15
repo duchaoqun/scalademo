@@ -1,9 +1,6 @@
 package cn.duchaoqun.Chapter04
 
-/**
-  * 4 迭代Map
-  */
-object Demo4 extends App {
+object Demo04 extends App {
 
   val map0 = Map("A" -> 1, "B" -> 2)
 
