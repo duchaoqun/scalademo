@@ -1,8 +1,22 @@
 package cn.duchaoqun
 
+import java.net.InetAddress
+
 import cn.duchaoqun.Demo.{Man, Person}
 
+import scala.collection.mutable.ListBuffer
+
 object Main extends App {
+
+  // 获取本地 ip 地址的函数
+  val iNetAddress = InetAddress.getAllByName(InetAddress.getLocalHost.getHostName)
+  val addressList = new ListBuffer[String]
+
+  for (x <- iNetAddress) {
+    addressList.addOne(x.getHostAddress)
+  }
+  addressList.foreach(println)
+
   // 里氏替换原则：
   val p1 = new Person
   val p2 = new Man
