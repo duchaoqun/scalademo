@@ -2,7 +2,7 @@ package cn.duchaoqun.Chapter09
 
 import java.io.{File, FileWriter}
 
-object Demo1 extends App {
+object Demo01 extends App {
   import scala.io.Source
   // Read File // 读取一个文件，返回BufferedSource。
   // 第一个参数是字符串或者是java.io.File

@@ -4,13 +4,7 @@ import scala.language.postfixOps
 
 import java.io.File
 
-/**
-  * 9.9 进程控制【A2】
-  * 按照传统习惯，程序员使用Shell脚本来执行日常处理任务，比如把文件从一处移动到另外一处。
-  * Scala的设计目的之一就是能在简单的脚本化任务和大型程序之间保持良好的伸缩性。
-  * scala.sys.process包提供了用于与shell程序交互的工具，你可以用scala编写shell脚本。
-  */
-object Demo9 extends App {
+object Demo09 extends App {
   import sys.process._
 
   // 执行系统的ls -lart . 命令，执行结果返回到标准输出

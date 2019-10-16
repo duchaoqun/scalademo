@@ -1,8 +1,5 @@
 package cn.duchaoqun.Chapter09
 
-/**
-  * 9.10 正则表达式
-  */
 object Demo10 extends App {
   import scala.util.matching.Regex
   val numPattern = "[0-9]+".r

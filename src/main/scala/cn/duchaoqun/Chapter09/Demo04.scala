@@ -1,9 +1,6 @@
 package cn.duchaoqun.Chapter09
 
-/**
-  * 9.4 从URL或者其他来源读取数据
-  */
-object Demo4 extends App {
+object Demo04 extends App {
   // 从URL读取时，我们需要先知道网页的字符集，可能是通过HTTP头获取。
   val source1 = scala.io.Source.fromURL("https://www.duchaoqun.cn", "UTF-8")
 
