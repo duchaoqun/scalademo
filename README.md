@@ -58,22 +58,53 @@
 
 ## Chapter 05 class  以及 类型系统
 
+- 简单类和无参方法
+- "getter" and "setter" 属性
+- 只有 getter 的属性
+- 对象私有字段
+- Bean 属性
+- 主构造器（primary constructor）
+- 辅助构造器（auxiliary constructor）
+- 嵌套类
+- Any 类
+- case class
+
 ## Chapter 06 object【单例对象与伴生对象】
+
+- 单例对象（singleton object）
+- 伴生对象/类（companion object/class）
+- 扩展类或特质的对象
+- 对象中的 apply 方法
+- 应用程序入口（main方法）
+- 枚举
 
 ## Chapter 07 package and import【包和引入】
 
-- 1 package
-- 2 作用域规则
-- 3 串联式包语句
-- 4 文件顶部标记法
-- 5 包对象
-- 6 包可见性
-- 7 import【引入包】
-- 8 任何地方都可以引入包
-- 9 重命名和隐藏方法
-- 10 隐式引入
+- package
+- 作用域规则
+- 串联式包语句
+- 文件顶部标记法
+- 包对象
+- 包可见性
+- import
+- 任何地方都可以引入包
+- 重命名和隐藏方法
+- 隐式引入
 
 ## Chapter 08 extends
+
+- 扩展类
+- 重写方法
+- 类型检查和转换
+- 受保护的字段和方法
+- 父类的构造
+- 重写字段
+- 匿名子类
+- 抽象类
+- 抽象字段
+- 构造顺序和提前定义
+- 类的继承层级
+- 对象相等性
 
 ## Chapter 09 文件和正则表达式
 
