@@ -2,10 +2,15 @@ package cn.duchaoqun.Chapter11
 
 import scala.collection.mutable
 
-/**
-  * 11.7 apply 和 update 方法
-  */
-object Demo11_7 extends App {
+object Demo07 extends App {
+
+  class Fraction11(n: Int, d: Int) {}
+
+  object Fraction11 {
+    def apply(n: Int, d: Int): Fraction11 = new Fraction11(n, d)
+  }
+
+
   // Scala 允许你将如下的函数调用语法：f(arg1, arg2, ...) 扩展到可以应用于函数之外的值。
   // 如果 f 不是函数或方法，那么这个表达式就等同于调用 f.apply(arg1, arg2, ...)
 
@@ -13,7 +18,7 @@ object Demo11_7 extends App {
   //   f(arg1, arg2, ...) = value
   //   f.update(arg1, arg2, ..., value)
   // 这个机制被应用于 Array 和 Map 中：
-  val scores = new mutable.HashMap[String,Int]()
+  val scores = new mutable.HashMap[String, Int]()
   scores("Bob") = 100
   scores.update("Chris", 100)
   println(scores)
@@ -28,9 +33,3 @@ object Demo11_7 extends App {
 }
 
 
-class Fraction11(n:Int ,d:Int){
-}
-
-object Fraction11{
-  def apply(n: Int, d: Int): Fraction11 = new Fraction11(n, d)
-}

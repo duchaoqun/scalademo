@@ -1,17 +1,9 @@
 package cn.duchaoqun.Chapter11
 
-/**
-  * 11.6 操作符结合性
-  */
-object Demo11_6 extends App {
-
+object Demo06 extends App {
   // 在 Scala 中所有的操作符都是左结合的，如下先计算 20-2 ，然后再计算18 - 9，根据操作符优先级，结果赋值给 a
   val a = 20 - 2 - 9
   println(a)
-
-
-  // 以冒号（：）结尾的操作符。
-  // 赋值操作符
 
   // 用于构造列表的“::”操作符是右结合的。
   // 首先 2 :: Nil 构造一个列表，然后它作为尾部拼接到以 1 为头部的列表后面。
