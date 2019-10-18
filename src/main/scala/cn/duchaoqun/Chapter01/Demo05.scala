@@ -92,4 +92,7 @@ object Demo05 extends App {
 
   // todo ： 排序
   val str_8 = str_0.sorted
+
+  str_1.toUpperCase     // 将字符串转换成大写。
+  str_1.toLowerCase     // 将字符串转换成小写。
 }

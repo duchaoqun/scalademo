@@ -69,22 +69,49 @@
 
 ### 【Demo08】将函数赋值给 val 变量
 ### 【Demo09】使用匿名函数
-### 【Demo23】高阶函数 collect
-### 【Demo16】高阶函数 filter
-### 【Demo18】高阶函数 flatMap
-### 【Demo21】高阶函数 foldLeft
-### 【Demo22】高阶函数 foldRight
-### 【Demo15】高阶函数 foreach
-### 【Demo11】高阶函数 map
-### 【Demo19】高阶函数 reduce
-### 【Demo17】高阶函数 reduceLeft
-### 【Demo20】高阶函数 reduceRight
-### 【TODO】高阶函数 sortWith
+
+### 高阶函数
+
+- 【Demo23】collect
+- 【Demo16】filter
+- 【TODO】filterNot
+- 【TODO】partition
+- 【Demo15】foreach
+- 【Demo11】map 将一元函数应用到集合中的所有元素，返回一个新的集合。
+- 【Demo18】flatMap
+- 【Demo19】reduce
+- 【Demo17】reduceLeft 使用二元函数来组合集合中的元素，从左边开始取两个元素...
+- 【Demo20】reduceRight 使用二元函数来组合集合中的元素，从右边开始取两个元素...
+- 【TODO】fold
+- 【Demo21】foldLeft 提供首个元素，以首元素和左侧第一个元素，传入二元函数进行运算，结果与左边第二个元素继续...
+- 【Demo22】foldRight 提供首个元素，以首元素和右侧第一个元素，传入二元函数进行运算，结果与右边第二个元素继续...
+- 【Demo27】scan scanLeft scanRight “折叠”操作
+- 【Demo28】zip zipAll zipWithIndex 将两个集合相互对应的元素结合在一起，拉链操作。
+- 【TODO】sortWith
+- 【TODO】aggregate
+- 【TODO】combine
+- 【TODO】count
+- 【TODO】forall
+- 【TODO】exists
+- 【TODO】takeWhile
+- 【TODO】takeRight
+- 【TODO】dropWhile
+- 【TODO】span
+- 【TODO】slice
 
 ### 【Demo12】闭包【TODO】
 ### 【Demo13】柯里化
 
 - 柯里化（Currying）：是把接受多个参数的函数变换成接受一个单一参数(最初函数的第一个参数)的函数，并且返回接受余下的参数且返回结果的新函数的技术
+
+### 【Demo24】SAM 转换
+
+### 【Demo25】控制抽象
+
+### 【Demo26】return 表达式
+
+- 在 Scala 中，你不需要使用 return 语句来返回值，函数的返回值就是函数体的值。
+- 不过，你可以用 return 来从一个匿名函数中返回值给包含这个匿名函数的带名函数。这对于控制抽象是很有用的。
 
 ### 副作用（side effect）
 
@@ -98,9 +125,3 @@
 - 纯函数和带有副作用的函数并非是不可转换的，只要将非纯函数的状态提取成一个context并在调用时传给函数，就能将函数改造为纯函数，比如同是随机函数的rand_r()就是个纯函数。
 - 之所以提倡编写纯函数尽量避免副作用，是因为具有副作用的函数的状态其实类似于一个单例（无论多少次被调用，访问的都是同一个上下文），从而给函数的并发带来麻烦。
 - 除开并发上的缺点，带有副作用的函数也通常没有纯函数好调试。
-
-## TODO
-
-- SAM转换【快学Scala 书中12.7】
-- 控制抽象【TODO】
-- return 表达式【TODO】

@@ -16,6 +16,10 @@ object Demo18 extends App {
   // flatMap 将集合第二层对象序列
   // def flatMap[B](f: (A) ⇒ GenTraversableOnce[B]): Array[B]
   val res = listPerson.flatMap(x => x.friends)
-  println(res)  // List(JohnFriendA, ChrisFriendA, ChrisFriendB, MaryFriendA, MaryFriendB, MaryFriendC)
+  println(res) // List(JohnFriendA, ChrisFriendA, ChrisFriendB, MaryFriendA, MaryFriendB, MaryFriendC)
 
+  // 将所有的值串在一起，返回一个 List[String] 对象。
+  val names = List("Scala", "Python", "Java")
+  def ulcase(s: String) = Vector(s.toUpperCase, s.toLowerCase)
+  names.flatMap(ulcase)
 }

@@ -1,11 +1,6 @@
 package cn.duchaoqun.Chapter13
 
-/**
-  * 13.4 List(不可变列表)
-  *
-  * 列表的值是不可变的，个别时候只是取了原来列表的值返回新创建的一个列表。
-  */
-object Demo13_4 extends App {
+object Demo04 extends App {
 
   // 创建一个空列表对象
   val list_6 = Nil
