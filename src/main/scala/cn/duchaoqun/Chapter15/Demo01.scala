@@ -3,15 +3,7 @@ package cn.duchaoqun.Chapter15
 import com.fasterxml.jackson.annotation.JsonTypeInfo.Id
 import com.fasterxml.jackson.databind.BeanProperty
 
-
-/**
-  * 1. 什么是注解？
-  *
-  * 注解可以让你在程序的各个条目中添加信息，这些信息可以被编译器或者外部工具处理。
-  * 注解是那些你插入到代码中以便有工具可以对他们进行处理的标签。
-  * 工具可以在代码级别运作，也可以处理被编译器加入了注解信息的类文件。
-  */
-object Demo1 extends App {
+object Demo01 extends App {
 
 
   /**

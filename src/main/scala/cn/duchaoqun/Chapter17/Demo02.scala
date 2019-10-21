@@ -1,9 +1,6 @@
 package cn.duchaoqun.Chapter17
 
-/**
-  * 17.2 泛型函数【使用类型参数的函数和方法】
-  */
-object Demo17_2 extends App {
+object Demo02 extends App {
 
   // 和泛型类一样，你需要把参数类型放在方法名称后面，Scala会从调用该方法的实际参数类型来推出类型。
   def getMiddle[T](a: Array[T]) = a(a.length / 2)
@@ -21,7 +18,7 @@ object Demo17_2 extends App {
     * @return 将 Array[T] 类型转换成 List[T] 类型
     */
   def asList[T](array: Array[T]): List[T] = {
-    if ( array == null || array.isEmpty){
+    if (array == null || array.isEmpty) {
       List[T]()
     } else {
       array.toList

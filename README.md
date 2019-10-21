@@ -174,29 +174,46 @@
 - 高阶函数 reduceRight
 - 柯里化
 - 副作用（side effect）
+- 偏函数（PartialFunction）
 
 ## Chapter 13 Collection（集合）
 
+- 主要的集合特质
+- scala.collection.Iterable 特质
+- scala.collection.Seq 特质
+- scala.collection.Set 特质
+- scala.collection.Map 特质
+- 懒视图
+
 ## Chapter 14 模式匹配和样例类
 
-- 1. match case 表达式
-- 2. 使用守卫的 match case 表达式
-- 3. match case 中的变量
-- 4. match case 匹配类型【L2】
-
+- match case 表达式
+- match case 表达式中的守卫
+- match case 表达式中的变量
+- match case 匹配类型
+- 匹配 Array、List、Tuple 类型
+- 提取器
+- 变量声明中的模式
+- 循环语句 for 表达式中的模式
+- case 语句中的中置表达法// TODO
+- 匹配嵌套结构
+- 样例类是邪恶的吗？
+- 密封类
+- 模拟枚举类型
 
 ## Chapter 15 注解
 
-- 1. 什么是注解？
-- 2. 什么可以被注解？
-- 3. 注解参数
-- 4. 创建注解【TODO】
-- 5. 针对Java特性的注解【TODO】
-- 6. 用于优化的注解【TODO】
-- 7. 用于错误和警告的注解【TODO】
+- 什么是注解？
+- 什么可以被注解？
+- 注解参数
+- 创建注解【TODO】
+- 针对Java特性的注解【TODO】
+- 用于优化的注解【TODO】
+- 用于错误和警告的注解【TODO】
 
 ## Chapter 16 XML 处理
 
+- Scala 提供了对 XML 的默认支持，我们从 2.13.1 开始学习，目前已经不在默认类库里面，待学习。
 
 ## Chapter 17 类型参数
 

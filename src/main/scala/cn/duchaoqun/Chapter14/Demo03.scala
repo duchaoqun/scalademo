@@ -1,9 +1,6 @@
 package cn.duchaoqun.Chapter14
 
-/**
-  * 3. match case 中的变量
-  */
-object Demo3 extends App {
+object Demo03 extends App {
   var sign = 0
   var digit = 0
   val str = "Scala"

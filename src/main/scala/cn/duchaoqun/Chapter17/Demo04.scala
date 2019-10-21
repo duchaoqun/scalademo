@@ -1,15 +1,6 @@
 package cn.duchaoqun.Chapter17
 
-/**
-  * 17.4 视图界定【View bounds】
-  *
-  * 1. 可以认为是【类型参数】的上下界定的加强版。
-  * 2. View Bounds视图界定，可以进行某种神秘的转换，把你的类型可以在没有直觉的情况下，转换成为目标类型。
-  * 3. 例如在 SparkContext 这个核心类中，有 T <% Writable 方式的代码，这个代码所表达的是 T 必须是 Writable 类型的。
-  *    但是 T 没有直接继承自 Writable 接口，此时就需要通过"implicit"的方式来实现这个功能。
-  * 2. 2.12.0以后过期
-  */
-object Demo17_4 extends App {
+object Demo04 extends App {
 
   // 定义一个使用上界类型参数的类
   class Pair1[T <: Comparable[T]](first: T, second: T) {}

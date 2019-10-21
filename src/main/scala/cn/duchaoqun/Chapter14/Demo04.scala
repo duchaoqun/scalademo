@@ -1,9 +1,6 @@
 package cn.duchaoqun.Chapter14
 
-/**
-  * 4. match case 匹配类型【L2】
-  */
-object Demo4 extends App {
+object Demo04 extends App {
 
   // 你可以对表达式的类型进行匹配
 
@@ -12,10 +9,10 @@ object Demo4 extends App {
   // 在 Scala 中，我们更倾向去使用这种 match case 语句，而不是 isInstanceOf 操作符。
   def textMatch(obj: Any) ={
     obj match {
-      case x: Int => x  // 匹配到的 Int 类型值被赋值到变量 x
+      case x: Int => x                       // 匹配到的 Int 类型值被赋值到变量 x
       case s: String => Integer.parseInt(s)  // 匹配到的 String 类型值被赋值到变量 s
-      case _: BigInt => Int.MaxValue  // 匹配任何类型为 BigInt 的对象。
-      case BigInt =>   // 匹配类型为 Class 的 BigInt 对象，注意！不应该这样写，你必须给出一个变量名。
+      case _: BigInt => Int.MaxValue         // 匹配任何类型为 BigInt 的对象。
+    //case BigInt =>                         // 匹配类型为 Class 的 BigInt 对象，注意！不应该这样写，你必须给出一个变量名。
       case _ =>
     }
   }

@@ -1,14 +1,10 @@
 package cn.duchaoqun.Chapter14
 
-/**
-  * 1. match case 表达式
-  * 一个模式匹配包含了一系列备选项，每个都开始于关键字 case。每个备选项都包含了一个模式及一到多个表达式。箭头符号 => 隔开了模式和表达式。
-  */
-object Demo1 extends App {
+object Demo01 extends App {
   var sign = 0
   val ch:Char ='S'
 
-  // case _ 默认匹配，如果没找到匹配的内容，就执行这部分代码（避免匹配不到而报MatchError）。t
+  // case _ 默认匹配，如果没找到匹配的内容，就执行这部分代码（避免匹配不到而报MatchError）。
   ch match {
     case '+' => sign = 1
     case '-' => sign = -1
@@ -26,7 +22,6 @@ object Demo1 extends App {
 
   /**
     * 案例A 匹配值
-    * 1. 下划线代表其他情况,java每行要写break,scala这里不用
     * 2. 匹配字符串, 如果找到左面的字符串就执行右面的函数.
     * 3. case后面可以使用守卫来做判断
     *

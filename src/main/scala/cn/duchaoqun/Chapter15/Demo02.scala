@@ -6,11 +6,7 @@ import com.sun.xml.internal.stream.Entity
 import javax.inject.Inject
 import org.bouncycastle.util.test.Test
 
-/**
-  * 2. 什么可以被注解？
-  * 在 Scala 中，你可以为类、方法、字段、局部变量、参数添加注解，跟 Java 一样。
-  */
-object Demo2 extends App {
+object Demo02 extends App {
 
   // 给类添加注解
   // @Entity class Credentials1 {}

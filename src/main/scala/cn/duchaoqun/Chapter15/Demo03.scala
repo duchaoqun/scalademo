@@ -7,10 +7,7 @@ import javax.inject.Named
 import org.junit.Test
 
 
-/**
-  * 3. 注解参数
-  */
-object Demo3 extends App {
+object Demo03 extends App {
 
   // Java 注解可以有带名参数
   @Test (timeout = 100, expected = classOf[IOException])

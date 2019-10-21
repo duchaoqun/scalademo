@@ -1,10 +1,6 @@
 package cn.duchaoqun.Chapter17
 
-
-/**
-  * 17.1 泛型类【使用类型参数的类】
-  */
-object Demo17_1 extends App {
+object Demo01 extends App {
 
   /**
     * 定义一个带有两个【类型参数】 T 和 S 的的

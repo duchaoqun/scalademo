@@ -1,9 +1,6 @@
 package cn.duchaoqun.Chapter17
 
-/**
-  * 17.3 类型参数的上下界定
-  */
-object Demo17_3 extends App {
+object Demo03 extends App {
 
   // 有时，你需要对类型变量进行限制，例如下面的Pair类型，它要求它的两个组件类型相同
   class Pair1[T](first: T, second: T) {}

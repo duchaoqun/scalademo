@@ -1,10 +1,5 @@
 package cn.duchaoqun.Chapter14
-
-
-/**
-  * 2. 使用守卫的 match case 表达式
-  */
-object Demo2 extends App {
+object Demo02 extends App {
   var sign = 0
   var digit = 0
   val ch = 8
