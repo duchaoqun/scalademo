@@ -52,7 +52,7 @@ libraryDependencies += "junit" % "junit" % "4.12"
 // https://mvnrepository.com/artifact/com.typesafe.scala-logging/scala-logging
 libraryDependencies += "com.typesafe.scala-logging" %% "scala-logging" % "3.9.2"
 
-// Spark相关bao
+// Spark 相关
 // https://mvnrepository.com/artifact/org.apache.spark/spark-core
 //libraryDependencies += "org.apache.spark" %% "spark-core" % "2.0.2"
 
