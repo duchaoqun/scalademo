@@ -2,7 +2,9 @@
 
 ### 【Demo04】基本数据类型介绍
 
-### 【TODO】基本数据类型 Byte
+### 【Demo02】基本数据类型 Byte
+
+- 一个 8 位带符号整数（相当于 Java 的 byte）是 scala.AnyVal 的一个子类型。
 
 ### 【Demo07】基本数据类型 Char
 

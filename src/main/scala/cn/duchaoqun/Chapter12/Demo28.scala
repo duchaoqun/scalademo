@@ -10,6 +10,7 @@ object Demo28 extends App {
   val res = prices zip quantities // List[(Double, Int)] = List((10.0,10), (25.0,4), (100.0,2))
 
   // 计算每类商品总价
+  import scala.language.postfixOps
   val total = res.map(p => p._1 * p._2) sum
 
   // 如果一个集合比另外一个集合短，那么结果对偶的数量和较短的那个集合元素数量相等。
