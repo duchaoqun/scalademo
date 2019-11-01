@@ -18,31 +18,31 @@ object Demo13 extends App {
   }
 
   // 而事件源需要一个监听器集合，和一个触发这些监听器的方法：
-  trait Source[E, L <: Listener[E]] {
-    private val listeners = new ArrayBuffer[L]()
-
-    def add(l: L): Unit = {
-      listeners += l
-    }
-
-    def remove(l: L): listeners.type = {
-      listeners -= l
-    }
-
-    def fire(e: E): Unit = {
-      for (l <- listeners) l.occurred(e)
-    }
-  }
+//  trait Source[E, L <: Listener[E]] {
+//    private val listeners = new ArrayBuffer[L]()
+//
+//    def add(l: L): Unit = {
+//      listeners += l
+//    }
+//
+//    def remove(l: L): listeners.type = {
+//      listeners -= l
+//    }
+//
+//    def fire(e: E): Unit = {
+//      for (l <- listeners) l.occurred(e)
+//    }
+//  }
 
   // 现在，我们来考虑按钮触发动作事件的情况，我们定义如下监听器类型：
   trait ActionListener extends Listener[ActionEvent]
 
   // Button 类可以混入 Source 特质：
-  class Button extends Source[ActionEvent , ActionListener]{
-    def click(): Unit = {
-      fire(new  ActionEvent(this, ActionEvent.ACTION_PERFORMED, "Click"))
-    }
-  }
+//  class Button extends Source[ActionEvent , ActionListener]{
+//    def click(): Unit = {
+//      fire(new  ActionEvent(this, ActionEvent.ACTION_PERFORMED, "Click"))
+//    }
+//  }
 
   // 任务完成：Button 类不需要重复那些监听器管理的代码，并且监听器是类型安全的，你没有办法给按钮加上 ChangeListener。
 

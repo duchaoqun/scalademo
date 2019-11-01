@@ -4,11 +4,12 @@ import java.util
 import net.sf.jasperreports.engine.data.JRBeanCollectionDataSource
 import net.sf.jasperreports.engine.xml.JRXmlLoader
 import net.sf.jasperreports.engine.{JasperCompileManager, JasperExportManager, JasperFillManager}
-import scala.collection.JavaConverters._
+import scala.jdk.CollectionConverters._
 import scala.collection.mutable.ArrayBuffer
 
 object D_01 extends App {
 
+  // 数据源：一个 List 对象，里面存放一个 Map 结构，用来存放字段值和，列表值。
   // 创建填充需要使用的Map对象，这里需要是 Java 对象。
   val param = new util.HashMap[String, Object]()
 
@@ -27,7 +28,7 @@ object D_01 extends App {
   fieldList.add(param)
 
   // 加载生成 JasperDesign 对象
-  val jd = JRXmlLoader.load("C:/Users/ducha/JaspersoftWorkspace/MyReports/Blank_A4.jrxml")
+  val jd = JRXmlLoader.load("C:/Users/Chris/JaspersoftWorkspace/MyReports/Blank_A4.jrxml")
 
   // 编译生成 jasper 对象
   val jreport = JasperCompileManager.compileReport(jd)
@@ -38,8 +39,8 @@ object D_01 extends App {
   val jasperPrint = JasperFillManager.fillReport(jreport, param, new JRBeanCollectionDataSource(fieldList))
 
   //导出PDF文件
-  JasperExportManager exportReportToPdfFile(jasperPrint, "C:/Users/ducha/Desktop/Blank_A4.pdf")
+  JasperExportManager exportReportToPdfFile(jasperPrint, "C:/Users/Chris/Desktop/Blank_A4.pdf")
 
   //导入HTML文件
-  JasperExportManager.exportReportToHtmlFile(jasperPrint, "C:/Users/ducha/Desktop/Blank_A4.html")
+  JasperExportManager.exportReportToHtmlFile(jasperPrint, "C:/Users/Chris/Desktop/Blank_A4.html")
 }

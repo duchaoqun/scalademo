@@ -1,7 +1,7 @@
 package cn.duchaoqun.DemoAkka
 
 import akka.actor.{ActorSystem, Props}
-import cn.duchaoqun.Chapter20.Actor01
+import cn.duchaoqun.Chapter20.Demo01.Actor01
 
 object Demo06 extends App {
 

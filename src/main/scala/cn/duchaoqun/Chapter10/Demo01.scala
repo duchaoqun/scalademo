@@ -1,12 +1,5 @@
 package cn.duchaoqun.Chapter10
 
-/**
-  * Scala 和 Java 一样不允许类继承多个父类（不能多重继承）。
-  * 如果我们只是把两个毫不相关的类组合在一起，这样多重继承没有问题。
-  * 但是如果这些类包含共同的方法或者字段，这样就有问题了。
-  *
-  * 在 Java 中 class 只能扩展一个父类，但是可以实现任意数量的接口，但接口只能包含抽象方法，不能包含字段。
-  */
 object Demo01 extends App {
 
   class Person {
