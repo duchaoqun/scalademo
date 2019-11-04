@@ -58,6 +58,9 @@
 
 ## Chapter 05 class  以及 类型系统
 
+- 类型系统
+- Any 类
+- Nothing 类
 - 简单类和无参方法
 - "getter" and "setter" 属性
 - 只有 getter 的属性
@@ -66,8 +69,8 @@
 - 主构造器（primary constructor）
 - 辅助构造器（auxiliary constructor）
 - 嵌套类
-- Any 类
 - case class
+- classOf 和 getClass
 
 ## Chapter 06 object【单例对象与伴生对象】
 

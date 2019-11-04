@@ -1,0 +1,16 @@
+## 编写脚本
+
+
+```scala
+// 在一个文件里面编写脚本内容来实现我们需要的功能.
+// test.scala arg1 arg2 arg3 arg4
+println("Hello, "+args{0} +"!")
+```
+
+## 执行脚本
+
+```shell
+# 在操作中终端里面使用scala解释器来执行这个脚本
+C:\Users\Administrator>scala test.scala Hello Scala!
+Hello, World!
+```

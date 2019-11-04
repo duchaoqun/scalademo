@@ -1,5 +1,38 @@
 ## Chapter 05 class  以及 类型系统
 
+## 类型系统
+
+- Any 最顶层
+  - AnyVal
+    - Double 数值类型
+    - Float  数值类型
+    - Long   数值类型
+    - Int    数值类型
+    - Short  数值类型
+    - Byte   数值类型
+    - Char   数值类型
+    - Boolean
+    - Unit
+  - AnyRef
+- Nothing
+- Null
+
+- Scala 2.10之前，AnyVal是一个密封的trait，不能被继承。
+- Scala 2.10开始，我们可以自定义一个从AnyVal继承下来的类型。
+- 类 Null 代表 null 引用，它是所有引用类（每个由AnyRef派生的类）的子类。
+- Null 和值类型不兼容，也就是比如说，你不能把 null 赋值给一个整数类型变量。
+- 包含了Java的Object类的一些方法，比如notify()、wait()和finalize()，AnyRef是可以直接当做java的Object来用的。
+- 对于Any和AnyVal，只有在编译的时候，scala才会将它们视为Object。换句话说，在编译阶段Any和AnyVal会被类型擦除为Object。
+
+### 【Demo09】Any 类
+
+- Scala 类继承结构中最顶层的，所有运行环境中的 Scala 类都是直接或间接继承自 Any 这个类，所有类的父类。
+
+### 【Demo12】Nothing 类
+
+- scala.Nothing，为底层类型，所有类的最终子类都是Nothing。
+- 然而这个类型没有任何实例（也就是没有任何值对应Nothing类型），Nothing 类型的一个用法是示意应用程序非正常终止，比如 Predef 的有一个 error 方法。
+
 ### 【Demo01】简单类和无参方法
 
 - 使用 class 关键字定义一个类，然后使用 new class 的方式创建这个类的对象。
@@ -45,12 +78,21 @@
 - 在 Scala 中你可以在任意的语法结构中嵌套任意的语法结构，你可以在函数中定义函数，在类中定义类。
 - 在 Scala 中每个实例都有它自己的 Member 类，就像属性一样，两个不同的对象包含的 Member 类是不相同的。
   
-### 【Demo09】Any 类
-
-- Scala 类继承结构中最顶层的，所有运行环境中的 Scala 类都是直接或间接继承自 Any 这个类。
-- Scala 中的 Nothing 类型，是所有类型的子类。
-
 ## case class 【样例类】
 
 - 【Demo10】样例类是一种特殊的类，它们经过优化被用于模式匹配。
 - 【Demo11】样例类的 copy 方法和带名参数。
+
+## 【Demo13】classOf 和 getClass
+
+- 类(class)与类型(type)是两个不一样的概念。
+- 在java里因为早期一直使用class表达type，并且现在也延续这样的习惯。
+- 类型(type)比类(class)更“具体”，任何数据都有类型。
+- 类是面向对象系统里对同一类数据的抽象，在没有泛型之前，类型系统不存在高阶概念，直接与类一一映射，而泛型出现之后，就不在一一映射了。
+- 比如定义class List[T]{}, 可以有List[Int] 和 List[String]等具体类型，它们的类是同一个List，但类型则根据不同的构造参数类型而不同。
+- 类型一致的对象它们的类也是一致的，反过来，类一致的，其对象的类型不一定一致。
+
+## 【Demo14】ClassTag 和 TypeTag
+
+- ClassTag[T] 保存了被泛型擦除后的原始类型 T，提供给运行时。
+- TypeTag 则保存所有具体的类型。

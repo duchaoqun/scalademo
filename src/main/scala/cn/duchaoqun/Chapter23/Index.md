@@ -5,3 +5,4 @@
 ### 【Demo03】scala.util.{Try, Success, Failure}
 ### 【Demo04】scala.util.Either
 ### 【Demo05】scala.util.control.Breaks
+### 【Demo06】scala.concurrent.Future
