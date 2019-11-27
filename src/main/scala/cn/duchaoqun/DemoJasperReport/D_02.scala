@@ -3,6 +3,7 @@ package cn.duchaoqun.DemoJasperReport
 import java.util
 
 import net.sf.jasperreports.engine.data.JRBeanCollectionDataSource
+import net.sf.jasperreports.engine.export.JRCsvExporter
 import net.sf.jasperreports.engine.xml.JRXmlLoader
 import net.sf.jasperreports.engine.{JasperCompileManager, JasperExportManager, JasperFillManager}
 
@@ -91,4 +92,9 @@ object D_02 extends App {
 
   //导入HTML文件
   JasperExportManager.exportReportToHtmlFile(jasperPrint, "C:/Users/Chris/Desktop/Blank_A4.html")
+
+  // todo
+  val exp = new JRCsvExporter()
+
+
 }
