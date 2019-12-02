@@ -4,7 +4,7 @@ import java.io.File
 
 import scala.util.Try
 
-object File {
+object SFile {
 
   /**
     * 判断一个文件是否存在，如果不存在就创建这个文件。
@@ -36,8 +36,13 @@ object File {
     * @param path 目录File对象
     * @return
     */
-  def getFiles(path: String): Array[File] = {
-    new File(path).listFiles
+  def getListOfFiles(path: String): List[File] = {
+    val dir = new File(path)
+    if (dir.exists() && dir.isDirectory) {
+      dir.listFiles.filter(_.isFile).toList
+    } else {
+      List[File]()
+    }
   }
 
   // File file = new File("C:\\Users\\Chris\\Desktop\\1.txt")

@@ -20,7 +20,7 @@ object Demo07 extends App {
   }
 
 
-  val files = subDirs(new File("C:\\Users\\Chris\\Desktop\\New folder\\PDF"))
+  val files = subDirs(new File("D:\\Test"))
 
   files.foreach(x => println(x.getName))
 
