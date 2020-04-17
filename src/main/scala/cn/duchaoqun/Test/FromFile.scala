@@ -1,9 +1,7 @@
-package cn.duchaoqun.Demo.io.Source
+package cn.duchaoqun.Test
 
 import java.io.{File, FileWriter}
-
 import scala.io.Source
-import scala.util.{Failure, Success, Try}
 
 /**
   * 针对文件的一些操作
