@@ -1,8 +1,6 @@
 package cn.duchaoqun.Demo
 
-import com.typesafe.scalalogging._
-
-// https://github.com/lightbend/scala-logging
+import com.typesafe.scalalogging.LazyLogging
 
 object Demo001 extends App with LazyLogging {
   logger.info("INFO")

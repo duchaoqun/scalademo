@@ -276,5 +276,12 @@
 
 ## Chapter 26 io 类库
 
+- Demo01 读取配置文件内容
+- Demo02 覆盖默认配置
+
+## Demo
+
+- Demo001 使用日志LazyLogging
+
 - scala.sys.process._
 

@@ -1,4 +1,4 @@
-package cn.duchaoqun.Test
+package cn.duchaoqun.Demo
 
 import java.io.{File, FileWriter}
 import scala.io.Source

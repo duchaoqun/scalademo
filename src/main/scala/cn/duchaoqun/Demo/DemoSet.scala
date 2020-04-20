@@ -1,4 +1,4 @@
-package cn.duchaoqun.Demo.scala.collection.mutable
+package cn.duchaoqun.Demo
 
 import scala.collection.mutable
 

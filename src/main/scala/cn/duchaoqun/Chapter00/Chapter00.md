@@ -40,9 +40,6 @@
   // https://www.playframework.com/documentation/2.7.x/Home
   // https://www.playframework.com/documentation/2.8.0-M5/Home
 
-  // 【PlaySlick文档】
-  // http://slick.lightbend.com/doc/3.2.3/
-  // http://slick.lightbend.com/doc/3.2.3/api/index.html#package
 
   // 【Spark官方文档】
   // http://spark.apache.org/docs/

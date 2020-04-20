@@ -2,8 +2,6 @@ package cn.duchaoqun
 
 import java.net.InetAddress
 
-import cn.duchaoqun.Demo.{Man, Person}
-
 import scala.collection.mutable.ListBuffer
 
 object Main extends App {
@@ -18,20 +16,11 @@ object Main extends App {
   addressList.foreach(println)
 
   // 里氏替换原则：
-  val p1 = new Person
-  val p2 = new Man
 
 
   // 任何可以出现父类 Person 的地方，同样可以出现其子类。
-  def display1(person: Person): Unit = {
-    person.display()
-  }
   // 如果使用的是一个子类的话，那么它不能适用于其父类。
-  def display2(man: Man): Unit = {
-    man.display()
-  }
 
-  display1(p2)
   // display2(p1) 错误的
 
   val xmax, ymax = 100

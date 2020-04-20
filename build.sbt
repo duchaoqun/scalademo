@@ -7,6 +7,9 @@ scalaVersion := "2.13.0"
 
 // PG 数据库驱动
 libraryDependencies += "org.postgresql" % "postgresql" % "42.2.5"
+libraryDependencies += "com.typesafe.slick" %% "slick" % "3.3.2"
+libraryDependencies += "com.typesafe.slick" %% "slick-hikaricp" % "3.3.2"
+
 
 // https://mvnrepository.com/artifact/com.typesafe.akka/akka-actor
 libraryDependencies += "com.typesafe.akka" %% "akka-actor" % "2.6.0-M7"
@@ -47,7 +50,7 @@ libraryDependencies += "junit" % "junit" % "4.12"
 
 // 记录日志的相关包
 // https://github.com/lightbend/scala-logging
-//libraryDependencies += "ch.qos.logback" % "logback-classic" % "1.2.3"
+libraryDependencies += "ch.qos.logback" % "logback-classic" % "1.2.3"
 
 // https://mvnrepository.com/artifact/com.typesafe.scala-logging/scala-logging
 libraryDependencies += "com.typesafe.scala-logging" %% "scala-logging" % "3.9.2"
