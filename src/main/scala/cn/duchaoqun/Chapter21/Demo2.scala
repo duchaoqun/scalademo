@@ -3,6 +3,7 @@ package cn.duchaoqun.Chapter21
 import java.io.File
 
 import scala.io.Source
+import scala.language.implicitConversions
 
 /**
   * 21.2 利用隐式转换扩展现有类库的功能
