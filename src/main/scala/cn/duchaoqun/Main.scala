@@ -3,8 +3,14 @@ package cn.duchaoqun
 import java.net.InetAddress
 
 import scala.collection.mutable.ListBuffer
+import scala.concurrent.Future
+import scala.concurrent.ExecutionContext.Implicits.global
 
 object Main extends App {
+
+  val division0: Future[Int] = Future {
+    10 / 2
+  }
 
   // 获取本地 ip 地址的函数
   val iNetAddress = InetAddress.getAllByName(InetAddress.getLocalHost.getHostName)

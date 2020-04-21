@@ -5,7 +5,7 @@ import scala.util.{Failure, Success, Try}
 /**
   * Try 处理异常，与 Either 功能互补，都有各自的特点。
   */
-object Demo03 extends App {
+object Demo005 extends App {
 
   //举例1:使用简单的计算
   //定义Try对象,declaration of Try object! 返回

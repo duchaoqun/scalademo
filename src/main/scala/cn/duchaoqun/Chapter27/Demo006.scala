@@ -1,24 +1,26 @@
-package cn.duchaoqun.Chapter23
+package cn.duchaoqun.Chapter27
 
-import scala.concurrent.ExecutionContext.Implicits.global
 import scala.concurrent.Future
 import scala.util.{Failure, Success}
+import scala.concurrent.ExecutionContext.Implicits.global
 
 /**
   * 1. 当程序中的某个过程执行时间较长, 同时它与程序中的其他环节没有很强的关联性, 那么这个过程便可以提取出来作为一个线程单独运行,
   * 2. Scala中的Future便是用来解决此类问题, 可以将用于并发执行的操作添加到Future中, 然后在未来的某个时间点再获取其执行结果.
   * 3. Future的状态主要有两类, 完成与未完成, 而完成状态又分为成功与失败, 成功会有并发执行函数的返回值, 失败则会抛出异常.
   */
-object Demo06 extends App {
+object Demo006 extends App {
   //案例1:创建Future类型的函数
   //创建Future对象,对象中保存单个Future
   val division0: Future[Int] = Future {
     10 / 2
   }
+  // class scala.concurrent.impl.Promise$Transformation
+  println(division0.getClass)
 
-  //回调函数
-  //f: Try[T] => U 回调表示会传回一个Try[T]类型对象,也就是Success和Failure分别代表成功和失败,这里需要一个对应的f函数作为参数.
-  //接收一个偏函数作为参数,这里可以省略括号,如下所示
+  // 回调函数
+  // f: Try[T] => U 回调表示会传回一个Try[T]类型对象,也就是Success和Failure分别代表成功和失败,这里需要一个对应的f函数作为参数.
+  // 接收一个偏函数作为参数,这里可以省略括号,如下所示
   division0 onComplete { //第一个回调函数,接收Future的返回结果
     case Success(x) => println("Callback1:" + x) //处理成功
     case Failure(e) => println("Callback1:" + e.getMessage)
@@ -70,4 +72,6 @@ object Demo06 extends App {
   // todo 通过Future对象的foreach方法执行内容.
   division0.foreach(msg => println(msg))
   Thread.sleep(10000) //为了看到效果,主线程等待10秒.
+
+  // todo andThen function
 }

@@ -69,7 +69,6 @@
 - 主构造器（primary constructor）
 - 辅助构造器（auxiliary constructor）
 - 嵌套类
-- case class
 - classOf 和 getClass
 
 ## Chapter 06 object【单例对象与伴生对象】
@@ -262,26 +261,39 @@
 
 ## Chapter 22 定界延续
 
-## Chapter 23 util 类库
+## Chapter 23 scala.util.
 
-- scala.util.Random
-- scala.util.Properties
-- scala.util.{Try, Success, Failure}
+- Demo005 scala.util.{Failure, Success, Try}
 - scala.util.Either
 - scala.util.control.Breaks
+- scala.util.Random
+- scala.util.Properties
 
 ## Chapter 24 math 类库
 
 ## Chapter 25 sys 类库
+
+- scala.sys.process._
 
 ## Chapter 26 io 类库
 
 - Demo01 读取配置文件内容
 - Demo02 覆盖默认配置
 
+## Chapter 27 scala.concurrent.
+
+- Demo006 scala.concurrent.Future
+
 ## Demo
 
 - Demo001 使用日志LazyLogging
 
-- scala.sys.process._
+- Demo002 随机字符串
+
+- Demo003 Slick框架
+
+- Demo004 关键字 case class 是一种特殊的类
+  - 它们经过优化被用于模式匹配。
+  - copy 方法和带名称的参数。
+  
 

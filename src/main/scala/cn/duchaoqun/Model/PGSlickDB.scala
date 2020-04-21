@@ -3,45 +3,65 @@ package cn.duchaoqun.Model
 import slick.jdbc.PostgresProfile.api._
 import slick.lifted.Tag
 
-class PGSlickDB {
-  // 表字段对应的模板
-  case class T3Model(c01: String, c02: String, c03: String)
-  // 表结构: 定义字段类型, * 代表结果集字段
-  class T3(tag: Tag) extends Table[T3Model](tag, "T3") {
-    def c01 = column[String]("c01", O.PrimaryKey)       // 这个字段的属性是 VARCHAR(254) NOT NULL
+/**
+  * 使用 object 对象创建模板。
+  */
+object PGSlickDB {
+
+  case class T1(c01: String)
+  class T1Table(tag: Tag, tableName:String) extends Table[T1](tag, tableName) {
+    def c01 = column[String]("c01")
+    def * = c01 <> (T1 , T1.unapply)
+  }
+  // val t1 = TableQuery[T1]((tag:Tag)=>new T1(tag,"tablename"))
+
+
+  case class T2(c01: String, c02: String)
+  class T2Table(tag: Tag, tableName:String) extends Table[T2](tag, tableName) {
+    def c01 = column[String]("c01", O.PrimaryKey)                     // 这个字段的属性是 VARCHAR(254) NOT NULL
     def c02 = column[String]("c02", O.Default("null"))  // 这个字段的属性是 VARCHAR(254) DEFAULT NULL NOT NULL
-    def c03 = column[String]("c03")
-    def * = (c01, c02, c03) <> (T3Model.tupled, T3Model.unapply)
+    def * = (c01, c02) <> (T2.tupled, T2.unapply)
   }
   // 库表实例: 通过这个对象创建数据库表, 执行增删改查等任务
-  val t3 = TableQuery[T3]
+  val t2 = TableQuery[T2Table]((tag:Tag)=>new T2Table(tag,"tablename"))
 
 
-  case class T4Model(c01: String, c02: String, c03: String, c04: String)
-  class T4(tag: Tag) extends Table[T4Model](tag, "T4") {
+  case class T3(c01: String, c02: String, c03: String)
+  class T3Table(tag: Tag, tableName:String) extends Table[T3](tag, tableName) {
+    def c01 = column[String]("c01", O.PrimaryKey)
+    def c02 = column[String]("c02")
+    def c03 = column[String]("c03")
+    def * = (c01, c02, c03) <> (T3.tupled, T3.unapply)
+  }
+  val t3 = TableQuery[T3Table]((tag:Tag)=>new T3Table(tag,"tablename"))
+
+
+  case class T4(c01: String, c02: String, c03: String, c04: String)
+  class T4Table(tag: Tag, tableName:String) extends Table[T4](tag, tableName) {
     def c01 = column[String]("c01", O.PrimaryKey)
     def c02 = column[String]("c02")
     def c03 = column[String]("c03")
     def c04 = column[String]("c04")
-    def * = (c01, c02, c03, c04) <> (T4Model.tupled, T4Model.unapply)
+    def * = (c01, c02, c03, c04) <> (T4.tupled, T4.unapply)
   }
-  val t4 = TableQuery[T4]
+  val t4 = TableQuery[T4Table]((tag:Tag)=>new T4Table(tag,"tablename"))
 
 
-  case class T5Model(c01: String, c02: String, c03: String, c04: String,c05: String)
-  class T5(tag: Tag) extends Table[T5Model](tag, "T5") {
+  case class T5(c01: String, c02: String, c03: String, c04: String, c05: String)
+  class T5Table(tag: Tag, tableName:String) extends Table[T5](tag, tableName) {
     def c01 = column[String]("c01", O.PrimaryKey)
     def c02 = column[String]("c02")
     def c03 = column[String]("c03")
     def c04 = column[String]("c04")
-    def c05 = column[String]("c05", O.Default("null"))  // 这个字段的属性是 VARCHAR(254) NOT NULL
-    def * = (c01, c02, c03, c04, c05) <> (T5Model.tupled, T5Model.unapply)
+    def c05 = column[String]("c05")
+    def * = (c01, c02, c03, c04, c05) <> (T5.tupled, T5.unapply)
   }
-  val t5 = TableQuery[T5]
+  val t5 = TableQuery[T5Table]((tag:Tag)=>new T5Table(tag,"tablename"))
+
 
   // 如果需要动态设置表的名称, 这里面我们可以将tablename定义为参数, 然后再需要的页面声明 TableQuery对象.
-  case class T6Model(c00:String, c01: String, c02: String, c03: String, c04: String, c05: String, c06:String)
-  class T6(tag: Tag, tableName:String) extends Table[T6Model](tag, tableName) {
+  case class T6(c00:String, c01: String, c02: String, c03: String, c04: String, c05: String, c06:String)
+  class T6Table(tag: Tag, tableName:String) extends Table[T6](tag, tableName) {
     def c00 = column[String]("c00", O.PrimaryKey)
     def c01 = column[String]("c01")
     def c02 = column[String]("c02")
@@ -49,10 +69,10 @@ class PGSlickDB {
     def c04 = column[String]("c04")
     def c05 = column[String]("c05")
     def c06 = column[String]("c06")
-    def * = (c00, c01, c02, c03, c04, c05, c06) <> (T6Model.tupled, T6Model.unapply)
+    def * = (c00, c01, c02, c03, c04, c05, c06) <> (T6.tupled, T6.unapply)
   }
   // 在需要的页面上创建这个对象
-  val t6 = TableQuery[T6]((tag:Tag)=>new T6(tag,"tablename"))
+  val t6 = TableQuery[T6Table]((tag:Tag)=>new T6Table(tag,"tablename"))
 
 
   // Definition of the SUPPLIERS table 表结构
