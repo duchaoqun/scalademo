@@ -95,4 +95,6 @@ object PGSlickDB {
     def userinfo = foreignKey("USER_INFO_FK", userID, userInfo)(_.id)
   }
   val email = TableQuery[Email]
+
+
 }

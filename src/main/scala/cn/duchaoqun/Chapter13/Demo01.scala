@@ -1,5 +1,7 @@
 package cn.duchaoqun.Chapter13
 
+import scala.collection.mutable
+
 object Demo01 extends App {
   // 创建一个 Set 集合
   val set1: Set[Int] = Set(1, 2, 3)
