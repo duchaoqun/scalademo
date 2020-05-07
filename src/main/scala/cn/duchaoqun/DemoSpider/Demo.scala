@@ -28,7 +28,7 @@ object Demo extends App with LazyLogging {
   val db = Database.forConfig("pg", config.getConfig("db"))
 
 
-  def getUrlList = {
+  def getUrlList:List[String] = {
     logger.info("getURLs")
     val baseURL = "https://www.jianshu.com/"
     val htmlPage: HtmlPage = webClient.getPage(baseURL)
@@ -65,7 +65,7 @@ object Demo extends App with LazyLogging {
     })
   }
 
-  def getUrlList1(base: String) = {
+  def getUrlList1(base: String):List[String] = {
     logger.info("getURLs")
     val baseURL = "https://www.jianshu.com/"
     val htmlPage: HtmlPage = webClient.getPage(baseURL)

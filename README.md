@@ -263,7 +263,7 @@
 
 ## Chapter 23 scala.util.
 
-- Demo005 scala.util.{Failure, Success, Try}
+- scala.util.{Failure, Success, Try} Demo005
 - scala.util.Either
 - scala.util.control.Breaks
 - scala.util.Random
@@ -282,7 +282,8 @@
 
 ## Chapter 27 scala.concurrent.
 
-- Demo006 scala.concurrent.Future
+- scala.concurrent.Future Demo006
+- scala.concurrent.Await
 
 ## Demo
 
