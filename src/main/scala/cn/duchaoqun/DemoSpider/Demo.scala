@@ -8,9 +8,9 @@ import slick.jdbc.PostgresProfile.api._
 import cn.duchaoqun.Model._
 import com.typesafe.scalalogging.LazyLogging
 import org.jsoup.select.Elements
-import scala.concurrent.ExecutionContext.Implicits.global
 
-import scala.collection.mutable.ArrayBuffer
+import scala.concurrent.ExecutionContext.Implicits.global
+import scala.collection.mutable.{ArrayBuffer, ListBuffer}
 import scala.concurrent.Await
 import scala.concurrent.duration.Duration
 
@@ -42,15 +42,30 @@ object Demo extends App with LazyLogging {
     array.toList
   }
 
+  def getUrlList1(url: String):List[String] = {
+    val baseURL = "https://www.jianshu.com/"
+    val htmlPage: HtmlPage = webClient.getPage(url)
+    val html = htmlPage.asXml()
+    // Elements: 根据 Attribute Value 来获取 Elements，然后再根据 class 来过滤我们需要的。
+    // val res = Jsoup.parse(html, baseURL).getElementsByAttributeValue("target", "_blank").select(".title")
+    val res = Jsoup.parse(html, baseURL).getElementsByAttributeValue("rel", "noopener noreferrer")
+    val array = new ArrayBuffer[String]
+    res.forEach(x => {
+      array += x.absUrl("href")
+    })
+    logger.info("getUrlList1:" + array)
+    array.toList
+  }
+
   def saveData(title: String, content: String): Unit = {
     val articleQuery = TableQuery[Article]
         //    val res1 = Await.result(db.run(articleQuery.filter(x => x.title === title).exists.result), Duration.Inf)
     val res1 = Await.result(db.run(articleQuery.filter(x => x.title === title).exists.result.flatMap(exist => {
       if (!exist) {
-        logger.info("保存内容")
+        logger.info("保存内容: " + title)
         articleQuery += ((0, title, content))
       } else {
-        logger.info("内容已存在，跳过")
+        logger.info("已存在跳过: " + title)
         DBIO.successful(None)
       }
     })), Duration.Inf)
@@ -65,23 +80,23 @@ object Demo extends App with LazyLogging {
     })
   }
 
-  def getUrlList1(base: String):List[String] = {
-    logger.info("getURLs")
-    val baseURL = "https://www.jianshu.com/"
-    val htmlPage: HtmlPage = webClient.getPage(baseURL)
-    val html = htmlPage.asXml()
-    // Elements: 根据 Attribute Value 来获取 Elements，然后再根据 class 来过滤我们需要的。
-    val res = Jsoup.parse(html, baseURL).getElementsByAttributeValue("target", "_blank").select(".title")
-    val array = new ArrayBuffer[String]
-    res.forEach(x => {
-      array += x.absUrl("href")
-    })
-    array.toList
+  def saveContent1(url:String): Unit = {
+      val htmlPage: HtmlPage = webClient.getPage(url)
+      val title = Jsoup.parse(htmlPage.asXml()).getElementsByTag("title").text()
+      val content = Jsoup.parse(htmlPage.asXml()).getElementsByTag("article").text()
+      saveData(title, content)
   }
-  getUrlList1("https://www.jianshu.com/p/c7647045d879").foreach(println)
-  //saveContent(getUrlList)
-  //db.close()
 
+
+  val listBuffer = ListBuffer("https://www.jianshu.com/p/f5c5ede490be")
+  while (listBuffer.nonEmpty){
+    val url = listBuffer.remove(0)
+    listBuffer ++= getUrlList1(url)
+    saveContent1(url)
+    Thread.sleep(1000)
+  }
+
+  db.close()
   // 创建表
   // Await.result(db.run(TableQuery[Article].schema.create),Duration.Inf)
 

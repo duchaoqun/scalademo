@@ -296,5 +296,6 @@
 - Demo004 关键字 case class 是一种特殊的类
   - 它们经过优化被用于模式匹配。
   - copy 方法和带名称的参数。
-  
+ 
+- scala.collection.mutable.ListBuffer Demo008
 

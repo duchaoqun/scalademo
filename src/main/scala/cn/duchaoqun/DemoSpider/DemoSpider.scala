@@ -40,7 +40,9 @@ object DemoSpider{
   webClient.waitForBackgroundJavaScript(10)
 
   // 准备 JDBC 连接
-  val conn = JDBC.getPGConn
+  val conn: Connection = JDBC.getPGConn
+
+  val listBuffer = new ListBuffer[String]
 
 
   /**
