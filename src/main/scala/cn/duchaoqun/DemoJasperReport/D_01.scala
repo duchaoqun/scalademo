@@ -28,8 +28,7 @@ object D_01 extends App {
   fieldList.add(param)
 
   // 加载生成 JasperDesign 对象
-  val jd = JRXmlLoader.load("C:/Users/Chris/JaspersoftWorkspace/MyReports/Blank_A4.jrxml")
-
+  val jd = JRXmlLoader.load("C:/Users/Chris/JaspersoftWorkspace/MyReports/Blank_A4_6.jrxml")
   // 编译生成 jasper 对象
   val jreport = JasperCompileManager.compileReport(jd)
 
